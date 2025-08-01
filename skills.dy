@@ -1,0 +1,25 @@
+skill Introduction
+dir 01 - Introduction
+skill Elements de base
+dir 02 - Elements de base
+skill Structures de Controle
+dir 03 - Structures de Controle
+skill Fonctions
+dir 04 - Fonctions
+skill Flux
+dir 05 - Flux
+skill Types arithmétiques et conversions 
+dir 06 - Types arithmétiques et conversions
+skill Structure_Enum
+dir 07 - Structure_Enum
+skill Chaines de caracteres
+dir 08 - Chaines de caracteres
+skill Tableaux
+dir 09 - Tableaux
+// 10 - Surcharge et Genericite
+// 11 - Classes
+// 12 - iterator - algorithm - numeric
+// 13 - classe generique
+// 14 - Gestion des erreurs
+// 15 - Allocation dynamique
+// 99 - Exercices récapitulatifs
