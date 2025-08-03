@@ -16,10 +16,17 @@ skill Chaines de caracteres
 dir 08 - Chaines de caracteres
 skill Tableaux
 dir 09 - Tableaux
-// 10 - Surcharge et Genericite
-// 11 - Classes
-// 12 - iterator - algorithm - numeric
-// 13 - classe generique
-// 14 - Gestion des erreurs
-// 15 - Allocation dynamique
-// 99 - Exercices récapitulatifs
+skill Surcharge et Genericite
+dir 10 - Surcharge et Genericite
+skill Classes
+dir 11 - Classes
+skill iterator - algorithm - numeric
+dir 12 - iterator - algorithm - numeric
+skill Classe générique
+dir 13 - classe generique
+skill Gestion des erreurs
+dir 14 - Gestion des erreurs
+skill Allocation dynamique
+dir 15 - Allocation dynamique
+skill Exercices récapitulatifs
+dir 99 - Exercices récapitulatifs
