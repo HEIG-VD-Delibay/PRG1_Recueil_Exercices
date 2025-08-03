@@ -10,3 +10,13 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 .DS_Store
+
+# Ignored for PLX
+.exo-state.toml
+debug.log
+main
+build
+
+# Specific to some exos
+99 - Exercices récapitulatifs/99-09 Encodeur - Decodeur/src/claire.txt
+99 - Exercices récapitulatifs/99-09 Encodeur - Decodeur/src/chiffre.txt
