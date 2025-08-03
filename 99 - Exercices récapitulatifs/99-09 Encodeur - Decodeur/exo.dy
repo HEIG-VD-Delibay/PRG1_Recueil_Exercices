@@ -1,0 +1,42 @@
+exo Encodeur - Decodeur
+Écrivez deux fonctions en C++, `encodeFile` et `decodeFile`.
+
+1. Fonction `encodeFile` :
+    - Entrée :
+        - `inputFilename` : le nom du fichier texte source à chiffrer.
+        - `outputFilename` : le nom du fichier de sortie où le texte encodé sera enregistré.
+        - `shift` : un entier représentant le décalage utilisé pour l'encodage.
+    - Traitement : Chaque lettre alphabétique est décalée de nombre donné de positions dans l'alphabet.
+        Le décalage est cyclique, les majuscules et les minuscules doivent être décalées dans leurs casses respectives :
+        ```text
+        encode 'a', décalage 2 -> 'c'
+        encode 'a', décalage -1 -> 'z'
+        encode 'Z', décalage 3 -> 'C'
+        ```
+    - Pour les caractères non alphabétiques, aucun décalage n'est effectué.
+    - Sortie : Le fichier `outputFilename` doit contenir le texte encodé.
+
+1. Fonction `decodeFile` :
+    - Entrée :
+        - Les mêmes que pour `encodeFile`.
+        - Traitement : Cette fonction doit inverser le processus d'encodage (décoder), en prenant le nom du fichier encodée et la même valeur de décalage pour retourner la contenu originale décodé. Pensez à éviter au maximum le code en double.
+        - Sortie : Le fichier `outputFilename` doit contenir le texte décodé.
+- Gestion des erreurs : Votre code doit pouvoir gérer les cas où les fichiers ne peuvent pas être ouverts ou créés.
+- Supposons que le décalage peut être un entier positif ou négatif.
+
+Le fichier `src/source.txt` contient ceci
+
+```
+The quick brown fox jumps over the lazy dog
+the quick brown FOX JUMPS OVER THE LAZY DOG
+```
+
+check Contenu correct après encodage et décodage
+see
+Wkh txlfn eurzq ira mxpsv ryhu wkh odcb grj
+wkh txlfn eurzq IRA MXPSV RYHU WKH ODCB GRJ
+The quick brown fox jumps over the lazy dog
+the quick brown FOX JUMPS OVER THE LAZY DOG
+
+// TODO: improve this exo with better output !!
+// TODO: add more checks with issues around files opening and writing

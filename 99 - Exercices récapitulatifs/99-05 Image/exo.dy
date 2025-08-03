@@ -1,0 +1,28 @@
+exo Image (tableau 2d)
+On veut représenter une image avec un type `Image` qui est un alias
+d'un vecteur de vecteurs de `PixelValue`, lui-même un alias du
+ type `unsigned short`.
+
+La fonction `make_image` reçoit les dimensions (largeur, hauteur)
+d'une image à créer et la valeur commune de tous ses pixels en paramètres.
+Si cette dernière n'est pas spécifiée, elle prend la plus petite
+valeur possible pour un `Pixel_value`.
+
+La fonction `dilate` effectue une dilatation morphologique, une
+opération de traitement d'image qui consiste à remplacer chaque point
+de l'image par le maximum d'un ensemble de points définis par un
+kernel, i.e. une liste de décalages par rapport au point considéré.
+Les décalages sont représentés par une structure `Pt` contenant deux entiers
+signés `x` et `y`, tandis que le kernel est représenté par le type
+`Kernel`, un alias de type vecteur de `Pt`.
+
+Par exemple, si le noyau est `{Pt{-1,0}, Pt{1,2}}`, le point de coordonnées
+`(x,y)` dans l'image retournée aura comme valeur le maximum des valeurs des points
+de coordonnées `(x-1,y)` et `(x+1,y+2)` dans l'image d'entrée.
+
+Définissez les différents types mentionnés ci-dessus et les fonctions
+`make_image` et `dilate`. Un exemple d'utilisation est disponible ci-dessous.
+
+check Output correct
+see pas d'output pour vérifier son code désolé ...
+// TODO: add some output ! maybe the image =

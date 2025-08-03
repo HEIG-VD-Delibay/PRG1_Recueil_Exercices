@@ -1,0 +1,12 @@
+exo Séquence croissante
+Ecrire la fonction générique `plus_long_sequence_croissante` qui reçoit en entrée
+une les itérateurs qui décrivent une plage d'éléments, ainsi qu'une
+fonction de comparaison, et qui retourne la plus long séquence croissante sous la
+forme d'une paire d'itérateurs.
+
+Si l'utilisateur ne spécifie pas de fonction de comparaison, on utilise l'opérateur `<`.
+
+check Output correct
+see Plus long sequence croissante (1): 1 2 2 3 4 
+Plus long sequence croissante (2): 1 2 2 3 4 
+Plus long sequence décroissante : 5 4 3 1

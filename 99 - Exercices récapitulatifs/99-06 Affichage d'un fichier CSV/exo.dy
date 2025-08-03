@@ -1,0 +1,22 @@
+exo Affichage d'un fichier .csv
+Ecrivez les fichiers `display_csv.h` et `display_csv.cpp` qui déclarent et définissent la fonction `display_csv` qui affiche le contenu d'un fichier
+.csv (comma separated values). Elle prend en paramètres
+- le nom du fichier à lire
+- le caractère de séparation des colonnes
+- la largeur des colonnes à afficher
+
+S'il est impossible d'ouvrir le fichier, signalez-le en levant une exception
+de type `File_not_found`, type que vous déclarez vous-même.
+
+Le check se base sur `data.txt`
+```text
+hello,world,x,y,z
+1,2,,4,5
+,b,c,,d
+```
+
+check Fichier `data.txt` correctement affiché
+see
+     hello     world         x         y         z
+         1         2                   4         5
+                   b         c                   d

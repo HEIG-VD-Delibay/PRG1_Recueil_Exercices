@@ -1,0 +1,14 @@
+exo Vérifier deux string_view
+Pour que la fonction de l'exercice _Transformer une string_
+puisse être utilisée pour encoder / décoder du texte sans perte d'information,
+il est nécessaire que les 2 chaines passées en paramètres 2 et 3
+- contiennent les mêmes caractères, en ne tenant pas compte de la casse
+- ne contiennent pas de doublons
+
+Écrire une fonction `verifier` qui retourne vrai si ces critères sont respectés, et faux sinon. Il est recommandé d'utiliser `<algoritm>`.
+
+check Output correct
+see
+"abcdef" compatible avec "FEDBAC"
+"abcdef" incompatible avec "xyz123"
+"abcA" incompatible avec "cAba"

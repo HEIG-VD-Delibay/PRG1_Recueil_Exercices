@@ -1,0 +1,25 @@
+exo Transformer une string
+Ecrire la fonction `transformer` qui modifie la chaine de
+caractère reçue en premier paramètre en remplaçant les
+caractères présents dans le 2ème paramètre par celui
+présent dans le 3ème paramètre à la même place. Elle retourne
+le nombre de caractères modifiés.
+
+Par exemple, si on appelle `transformer(s,"abc","bca");`, tous les `a`
+de la chaine `s` sont remplacés par `b`, tous les `b` sont
+remplacés par `c`, et tous les `c` sont remplacés par `a`.
+
+Par ailleurs, la détection des caractères à remplacer doit
+être indépendante de la casse, mais leur remplacement en tenir
+compte. Ainsi, avec l'appel ci-dessus, on doit aussi remplacer
+`A` par `B`, `B` par `C`, et `C` par `A`. L'appel à
+`transformer(s,"AbC","bCa");` aurait exactement le même effet.
+
+Pour faciliter le déboggage, vérifiez via une assertion que les 2ème et 3ème
+paramètres sont de même taille.
+
+check Output correct
+see 67
+Lorbm ipsum aolor sit fmbt: honsbhtbtur faipishind blit! Pefsbllus cfhilisis ft aolor bdbt hondub! Auis in lfhus plfhbrft fntb honsbhtbtur tbmpor! Fliqufm lorbm nunh: lforbbt quis cbudift fhhumsfn: vulputftb vitfb justo!
+67
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis at dolor eget congue. Duis in lacus placerat ante consectetur tempor. Aliquam lorem nunc, laoreet quis feugiat accumsan, vulputate vitae justo.
