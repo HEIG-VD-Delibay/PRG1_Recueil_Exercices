@@ -1,0 +1,23 @@
+exo Stack
+
+Ecrire l'implémentation d'une pile de *n* entiers (connu à la compilation) sur la base d'un `array`.
+
+Une pile contient
+
+- un entier `size` qui indique combien d'éléments sont stockés dans la pile, et donc aussi l'indice de son sommet
+- les `data`, ici `std::array<int, 10>`
+
+check Output correct
+see
+size : 0
+data : []
+
+top  : 1024
+size : 10
+
+size : 10
+data : [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+
+size : 0
+data : []
+

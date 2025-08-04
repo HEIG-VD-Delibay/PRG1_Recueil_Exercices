@@ -1,0 +1,41 @@
+exo Jour de la semaine
+
+Soient les deux déclarations
+
+~~~cpp
+enum class  Day { ERROR,   LUNDI,   MARDI,   MERCREDI,   JEUDI,   VENDREDI,   SAMEDI,   DIMANCHE};
+const std::array<string, 8> DAY{"ERROR", "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE"};
+~~~
+
+Ecrire les deux fonctions
+
+- **stringToDay** : reçoit un jour en *string* et retourne l'équivalent en *enum*
+- **dayToString** : reçoit un jour en *enum* et retourne l'équivalent en *string*
+
+Le cas échéant, retourne *enum ERROR* ou *string "ERROR"* selon la fonction.
+
+**NB** ne pas utiliser de *switch* ni le *find* de la librairie *algorithm*.
+
+check Conversion et gestion des erreurs fonctionels
+see
+day_to_string(Day(0)) => "ERROR"
+day_to_string(Day(1)) => "LUNDI"
+day_to_string(Day(2)) => "MARDI"
+day_to_string(Day(3)) => "MERCREDI"
+day_to_string(Day(4)) => "JEUDI"
+day_to_string(Day(5)) => "VENDREDI"
+day_to_string(Day(6)) => "SAMEDI"
+day_to_string(Day(7)) => "DIMANCHE"
+day_to_string(Day(9)) => "ERROR"
+day_to_string(Day(10)) => "ERROR"
+day_to_string(Day(11)) => "ERROR"
+---
+string_to_day("ERROR") => Day(0)
+string_to_day("LUNDI") => Day(1)
+string_to_day("MARDI") => Day(2)
+string_to_day("MERCREDI") => Day(3)
+string_to_day("JEUDI") => Day(4)
+string_to_day("VENDREDI") => Day(5)
+string_to_day("SAMEDI") => Day(6)
+string_to_day("DIMANCHE") => Day(7)
+string_to_day("not a day") => Day(0)
