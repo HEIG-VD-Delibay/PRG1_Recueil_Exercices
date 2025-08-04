@@ -8,15 +8,16 @@ Ecrivez les fichiers `display_csv.h` et `display_csv.cpp` qui déclarent et déf
 S'il est impossible d'ouvrir le fichier, signalez-le en levant une exception
 de type `File_not_found`, type que vous déclarez vous-même.
 
-Le check se base sur `data.txt`
+Le check se base sur `data.csv`
 ```text
 hello,world,x,y,z
 1,2,,4,5
 ,b,c,,d
 ```
 
-check Fichier `data.txt` correctement affiché
-see
+check Fichier data.csv correctement affiché
+// We are forced to have a text at the start to avoid trimming the first tab before "hello"
+see Content of data.csv
      hello     world         x         y         z
          1         2                   4         5
                    b         c                   d
