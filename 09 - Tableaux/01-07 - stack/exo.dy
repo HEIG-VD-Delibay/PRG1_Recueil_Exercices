@@ -1,6 +1,8 @@
 exo Stack
 
-Ecrire l'implémentation d'une pile de *n* entiers (connu à la compilation) sur la base d'un `array`.
+Ecrire l'implémentation d'une pile de *10* entiers (connu à la compilation) sur la base d'un `array`.
+
+// TODO okay la précision des 10 plutôt que n ??
 
 Une pile contient
 
