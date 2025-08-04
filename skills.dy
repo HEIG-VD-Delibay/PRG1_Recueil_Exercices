@@ -1,32 +1,32 @@
-skill Introduction
+skill [int] Introduction
 dir 01 - Introduction
-skill Elements de base
+skill [bas] Elements de base
 dir 02 - Elements de base
-skill Structures de Controle
+skill [ctl] Structures de Controle
 dir 03 - Structures de Controle
-skill Fonctions
+skill [fns] Fonctions
 dir 04 - Fonctions
-skill Flux
+skill [flu] Flux
 dir 05 - Flux
-skill Types arithmétiques et conversions 
+skill [mat] Types arithmétiques et conversions 
 dir 06 - Types arithmétiques et conversions
-skill Structure_Enum
+skill [enu] Structure_Enum
 dir 07 - Structure_Enum
-skill Chaines de caracteres
+skill [str] Chaines de caracteres
 dir 08 - Chaines de caracteres
-skill Tableaux
+skill [tab] Tableaux
 dir 09 - Tableaux
-skill Surcharge et Genericite
+skill [sur] Surcharge et Genericite
 dir 10 - Surcharge et Genericite
-skill Classes
+skill [cla] Classes
 dir 11 - Classes
-skill iterator - algorithm - numeric
+skill [ite] iterator - algorithm - numeric
 dir 12 - iterator - algorithm - numeric
-skill Classe générique
+skill [gen] Classe générique
 dir 13 - classe generique
-skill Gestion des erreurs
+skill [err] Gestion des erreurs
 dir 14 - Gestion des erreurs
-skill Allocation dynamique
+skill [dyn] Allocation dynamique
 dir 15 - Allocation dynamique
-skill Exercices récapitulatifs
+skill [rcp] Exercices récapitulatifs
 dir 99 - Exercices récapitulatifs
