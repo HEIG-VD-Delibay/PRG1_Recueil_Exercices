@@ -4,7 +4,7 @@ Indiquer ce que va afficher la séquence d'instructions suivantes :
 
 _Il se peut qu'une séquence provoque une erreur à la compilation ou à l'exécution, voire ait un comportement indéfini. Le cas échéant, répondez `COMP` ("Erreur à la compilation"), `EXEC` ("Erreur à l'exécution") ou `INDE` ("Comportement indéfini")_
 
-subexo
+subexo [tne]
 ~~~cpp
 string s1 = "ABC";
 string s2(s1, 1);
@@ -12,7 +12,7 @@ cout << '|' << s2 << '|' << endl;
 ~~~
 sol |BC|
 
-subexo
+subexo [kvb]
 ~~~cpp
 string s1 = "ABC";
 string s2(s1, 2, 3);
@@ -20,7 +20,7 @@ cout << '|' << s2 << '|' << endl;
 ~~~
 sol |C|
 
-subexo
+subexo [sci]
 ~~~cpp
 string s1 = "ABC";
 string s2(s1, 3, 2);
@@ -28,7 +28,7 @@ cout << '|' << s2 << '|' << endl;
 ~~~
 sol ||
 
-subexo
+subexo [xez]
 ~~~cpp
 string s1 = "ABC";
 string s2(s1, 4, 1);
@@ -37,28 +37,28 @@ cout << '|' << s2 << '|' << endl;
 sol EXEC
 // TODO: faut-il uniformiser ces erreurs particulières partout ?
 
-subexo
+subexo [qlq]
 ~~~cpp
 string s("ABC", 3);
 cout << '|' << s << '|' << endl;
 ~~~
 sol |ABC|
 
-subexo
+subexo [dvb]
 ~~~cpp
 string s("ABC", 4);
 cout << '|' << s << '|' << endl;
 ~~~
 sol |ABC\0|
 
-subexo
+subexo [oru]
 ~~~cpp
 string s("ABC", 5);
 cout << '|' << s << '|' << endl;
 ~~~
 sol INDE
 
-subexo
+subexo [syb]
 ~~~cpp
 string s(3, 'A');
 cout << '|' << s << '|' << endl;

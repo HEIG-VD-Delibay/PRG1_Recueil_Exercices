@@ -1,10 +1,10 @@
 skill Chaines de caracteres
-exo assign, '+', '+=' et append
+exo [ssd] assign, '+', '+=' et append
 Indiquer ce que va afficher la séquence d'instructions suivantes : 
 
 _Il se peut qu'une séquence provoque une erreur à la compilation ou à l'exécution, voire ait un comportement indéfini. Le cas échéant, répondez `COMP` ("Erreur à la compilation"), `EXEC` ("Erreur à l'exécution") ou `INDE` ("Comportement indéfini")_
 
-subexo
+subexo [dyg]
 ~~~cpp
 string s1 = "ABC";
 string s2;
@@ -13,7 +13,7 @@ cout << '|' << s2 << '|' << endl;
 ~~~
 sol |C|
 
-subexo
+subexo [bml]
 ~~~cpp
 string s1 = "ABC";
 string s2;
@@ -22,7 +22,7 @@ cout << '|' << s2 << '|' << endl;
 ~~~
 sol ||
 
-subexo
+subexo [abw]
 ~~~cpp
 string s;
 s.assign("ABC", 2);
@@ -30,7 +30,7 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |AB|
 
-subexo
+subexo [hkf]
 ~~~cpp
 string s;
 s.assign(2, 65);
@@ -38,7 +38,7 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |AA|
 
-subexo
+subexo [tiz]
 ~~~cpp
 string s;
 s.assign(4, '\101');
@@ -46,7 +46,7 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |AAAA|
 
-subexo
+subexo [tvf]
 ~~~cpp
 string s;
 s.assign(4, '\x42');
@@ -54,35 +54,35 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |BBBB|
 
-subexo
+subexo [qhz]
 ~~~cpp
 string s = string("A") + string("BC");
 cout << '|' << s << '|' << endl;
 ~~~
 sol |ABC|
 
-subexo
+subexo [zfh]
 ~~~cpp
 8.	string s = string("A") + "BC";
 cout << '|' << s << '|' << endl;
 ~~~
 sol |ABC|
 
-subexo
+subexo [jof]
 ~~~cpp
 string s = 'A' + string("BC");
 cout << '|' << s << '|' << endl;
 ~~~
 sol |ABC|
 
-subexo
+subexo [nnn]
 ~~~cpp
 string s = "A" + "BC";
 cout << '|' << s << '|' << endl;
 ~~~
 sol COMP
 
-subexo
+subexo [ntv]
 ~~~cpp
 string s = "AB";
 s += 'C';
@@ -90,7 +90,7 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |ABC|
 
-subexo
+subexo [mhf]
 ~~~cpp
 string s1 = "";
 string s2 = "123";
@@ -99,7 +99,7 @@ cout << '|' << s1 << '|' << endl;
 ~~~
 sol |123|
 
-subexo
+subexo [uby]
 ~~~cpp
 string s1 = "";
 string s2 = "123";
@@ -108,7 +108,7 @@ cout << '|' << s1 << '|' << endl;
 ~~~
 sol |23|
 
-subexo
+subexo [ikz]
 ~~~cpp
 string s;
 s.append("123", 2);
@@ -116,7 +116,7 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |12|
 
-subexo
+subexo [krl]
 ~~~cpp
 string s;
 s.append(2, '2');

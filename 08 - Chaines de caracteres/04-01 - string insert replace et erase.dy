@@ -1,11 +1,11 @@
 skill Chaines de caracteres
-exo Insert replace et erase
+exo [ykf] Insert replace et erase
 
 Indiquer ce que va afficher la séquence d'instructions suivantes : 
 
 _Il se peut qu'une séquence provoque une erreur à la compilation ou à l'exécution, voire ait un comportement indéfini. Le cas échéant, répondez `COMP` ("Erreur à la compilation"), `EXEC` ("Erreur à l'exécution") ou `INDE` ("Comportement indéfini")_
 
-subexo
+subexo [ixj]
 ~~~cpp
 // #1
 string s1 = "ABC";
@@ -15,7 +15,7 @@ cout << '|' << s1 << '|' << endl;
 ~~~
 sol |A123BC|
 
-subexo
+subexo [jus]
 ~~~cpp
 // #2
 string s1 = "ABC";
@@ -26,7 +26,7 @@ cout << '|' << s1 << '|' << endl;
 sol EXEC
 exp Erreur à l'exécution (NB s1.insert(3, s2) serait OK)
 
-subexo
+subexo [mcq]
 ~~~cpp
 // #3
 string s1 = "ABC";
@@ -36,7 +36,7 @@ cout << '|' << s1 << '|' << endl;
 ~~~
 sol |AB23C|
 
-subexo
+subexo [mog]
 ~~~cpp
 // #4
 string s1 = "ABC";
@@ -46,7 +46,7 @@ cout << '|' << s1 << '|' << endl;
 ~~~
 sol |AB123C|
 
-subexo
+subexo [akb]
 ~~~cpp
 // #5
 string s = "ABC";
@@ -55,7 +55,7 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |ABC12|
 
-subexo
+subexo [czp]
 ~~~cpp
 // #6
 string s = "ABC";
@@ -64,7 +64,7 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |A33BC|
 
-subexo
+subexo [sjt]
 ~~~cpp
 // #7
 string s1 = "ABCDEF";
@@ -74,7 +74,7 @@ cout << '|' << s1 << '|' << endl;
 ~~~
 sol |A123DEF|
 
-subexo
+subexo [szq]
 ~~~cpp
 // #8
 string s1 = "ABCDEF";
@@ -84,7 +84,7 @@ cout << '|' << s1 << '|' << endl;
 ~~~ 
 sol |AB123|
 
-subexo
+subexo [rfy]
 ~~~cpp
 // #9
 string s1 = "ABCDEF";
@@ -94,7 +94,7 @@ cout << '|' << s1 << '|' << endl;
 ~~~
 sol |A23DEF|
 
-subexo
+subexo [use]
 ~~~cpp
 // #10
 string s = "ABCDEF";
@@ -103,7 +103,7 @@ cout << '|' << s << '|' << endl;
 ~~~
 sol |AB12F|
 
-subexo
+subexo [grp]
 ~~~cpp
 // #11
 string s = "ABCDEF";
@@ -114,7 +114,7 @@ sol ||
 
 
 	
-subexo
+subexo [omq]
 ~~~cpp
 // #12
 string s = "ABCDEF";
@@ -124,7 +124,7 @@ cout << '|' << s << '|' << endl;
 sol |AB|
 
 
-subexo
+subexo [gbh]
 ~~~cpp
 // #13
 string s = "ABCDEF";
