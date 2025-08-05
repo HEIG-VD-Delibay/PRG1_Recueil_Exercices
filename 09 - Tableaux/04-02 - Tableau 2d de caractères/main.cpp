@@ -3,8 +3,6 @@
 using namespace std;
 
 // alias de type
-using Ligne = vector<char>;
-using Matrice = vector<Ligne>;
 
 // creer
 

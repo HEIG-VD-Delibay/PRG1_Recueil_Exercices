@@ -4,6 +4,11 @@ using namespace std;
 
 using Vec3d = array<double, 3>;
 
+// to_string
+// produit
+// produit_scalaire
+// produit_vectoriel
+
 int main() {
     Vec3d a{1., 2., 3.};
     Vec3d b{2., 4., 3.};

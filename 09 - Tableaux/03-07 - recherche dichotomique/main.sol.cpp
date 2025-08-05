@@ -4,17 +4,14 @@
 
 using namespace std;
 
-// TODO DY: check to_string implementation !
-string to_string(const vector<int> &v) {
-    string s;
-    s += '[';
-    for (int i = 0; i < v.size(); i++) {
+string to_string(span<const int> v) {
+    string result = "[";
+    for (size_t i = 0; i < v.size(); ++i) {
         if (i)
-            s += ", ";
-        s += to_string(v[i]);
+            result += ", ";
+        result += to_string(v[i]);
     }
-    s += ']';
-    return s;
+    return result += "]";
 }
 
 bool recherche(span<const int> s, int e) {

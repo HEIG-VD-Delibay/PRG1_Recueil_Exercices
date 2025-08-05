@@ -3,7 +3,17 @@
 
 using namespace std;
 
-// TODO DY: inclure to_string code !
+// supprimer_centre
+
+string to_string(span<const int> v) {
+    string result = "[";
+    for (size_t i = 0; i < v.size(); ++i) {
+        if (i)
+            result += ", ";
+        result += to_string(v[i]);
+    }
+    return result += "]";
+}
 
 int main() {
     for (vector<int> v: {vector<int>{},

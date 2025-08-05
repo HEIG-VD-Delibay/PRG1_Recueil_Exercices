@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// ensemble() version triée
+// ensemble() version triée, reprenez votre code précédent de ensemble()
 
 template<typename Tab>
 string to_string(const Tab &v) {

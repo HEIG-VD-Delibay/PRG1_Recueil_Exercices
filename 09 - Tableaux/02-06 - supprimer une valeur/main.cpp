@@ -4,6 +4,8 @@
 
 using namespace std;
 
+// supprimer_valeur
+
 string to_string(const vector<int> &v) {
     stringstream out;
     out << '[';

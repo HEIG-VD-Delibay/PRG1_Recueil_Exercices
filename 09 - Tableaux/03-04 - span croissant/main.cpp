@@ -5,6 +5,8 @@
 
 using namespace std;
 
+// est_strictement_croissant
+
 template<typename Tab>
 string to_string(const Tab &v) {
     stringstream out;

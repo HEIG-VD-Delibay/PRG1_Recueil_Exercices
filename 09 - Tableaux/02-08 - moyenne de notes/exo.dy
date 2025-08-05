@@ -4,9 +4,21 @@ Ecrire un programme C++ qui :
 1. calcule la moyenne de ces notes
 1. affiche la moyenne de ces notes avec 2 chiffres après la virgule
 
-check Output correct
+check Liste de note simple
 see Entrez la liste de vos notes, 0 pour quitter :
 type 5 6 5.5
 type 4 3.5 0
 see nb de notes saisies = 5
-see La moyenne des notes saisies = 4.80
+La moyenne des notes saisies = 4.80
+
+check Aucune note entrée
+see Entrez la liste de vos notes, 0 pour quitter :
+type 0
+see nb de notes saisies = 0
+Moyenne non calculable car aucune note saisie !
+
+check Note invalide est stoppe la lecture
+see Entrez la liste de vos notes, 0 pour quitter :
+type salut salut
+see nb de notes saisies = 0
+Moyenne non calculable car aucune note saisie !

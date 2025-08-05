@@ -13,6 +13,15 @@ void supprimer_centre(vector<int> &v) {
     v.resize(v.size() - n);
 }
 
+string to_string(span<const int> v) {
+    string result = "[";
+    for (size_t i = 0; i < v.size(); ++i) {
+        if (i)
+            result += ", ";
+        result += to_string(v[i]);
+    }
+    return result += "]";
+}
 
 int main() {
     for (vector<int> v: {vector<int>{},

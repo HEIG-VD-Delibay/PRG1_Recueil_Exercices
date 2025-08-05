@@ -6,16 +6,14 @@ using namespace std;
 
 // remplacer_valeurs_paires
 
-string to_string(const vector<int> &v) {
-    stringstream out;
-    out << '[';
+string to_string(span<const int> v) {
+    string result = "[";
     for (size_t i = 0; i < v.size(); ++i) {
         if (i)
-            out << ", ";
-        out << v[i];
+            result += ", ";
+        result += to_string(v[i]);
     }
-    out << ']';
-    return out.str();
+    return result += "]";
 }
 
 int main() {
