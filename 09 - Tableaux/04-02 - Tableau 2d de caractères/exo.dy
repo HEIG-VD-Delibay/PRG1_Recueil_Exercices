@@ -1,0 +1,30 @@
+exo Matrice de caractères
+Ecrire un programme C++ qui crée un objet de la classe vector permettant de stocker une matrice (irrégulière) de caractères et de l'afficher. Définir `Matrice`, `creer` et `afficher`.
+
+check Output correct
+see abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstu
+abcdefghijklmnopqrst
+abcdefghijklmnopqrs
+abcdefghijklmnopqr
+abcdefghijklmnopq
+abcdefghijklmnop
+abcdefghijklmno
+abcdefghijklmn
+abcdefghijklm
+abcdefghijkl
+abcdefghijk
+abcdefghij
+abcdefghi
+abcdefgh
+abcdefg
+abcdef
+abcde
+abcd
+abc
+ab
+a

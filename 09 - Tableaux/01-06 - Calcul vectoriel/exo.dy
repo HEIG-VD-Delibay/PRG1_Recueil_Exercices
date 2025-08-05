@@ -1,0 +1,17 @@
+exo Calcul vectoriel
+On décide d'utiliser un tableau de 3 `double` pour représenter un vecteur à 3 dimensions via
+
+```cpp
+using Vec3d = array<double, 3>;
+```
+
+Ecrivez les fonctions `to_string`, `produit`, `produit_scalaire` et `produit_vectoriel` pour que le programme donné compile.
+
+check Output correct
+see a = (1,2,3)
+b = (2,4,3)
+c = a*2 = (2,4,6)
+a.b = 19, a.c = 28, b.c = 38
+d = a^b = (-6,3,0)
+a.d = 0, b.d = 0
+e = a^a = (0,0,0)

@@ -1,0 +1,35 @@
+exo Médailles olympiques
+Soit le tableau suivant, donnant le nombre de médailles d'or, d'argent et de bronze obtenues par pays en patinage aux Jeux olympiques d'hiver.
+
+| Pays       | Or     | Argent | Bronze |
+|------------|:------:|:------:|:------:|
+| Allemagne  |   0    |   0    |   2    |
+| Canada     |   1    |   0    |   1    |
+| Chine      |   1    |   2    |   0    |
+| Corée      |   1    |   0    |   0    |
+| Etats-Unis |   2    |   1    |   1    |
+| Japon      |   0    |   1    |   1    |
+| Russie     |   0    |   1    |   0    |
+
+Ecrire un programme C++ mettant à disposition :
+- une fonction retournant le nombre total de médailles obtenues par un pays donné
+- une fonction retournant le nombre total de médailles d'un type donné obtenues par l'ensemble des pays (par ex le nombre total de médailles d'or obtenues par l'ensemble des pays)
+- … et bien sûr une fonction *main* permettant de tester les 2 fonctions précédentes.
+
+**NB** Le tableau des médailles ci-dessus est à implémenter sous la forme d'un array bidimensionnel (2D).<br>Utilisez intensément les alias de type pour clarifier votre code.
+
+check Output correct
+see
+Nombre total de médailles obtenues par chacun des pays
+Allemagne  : 2 medailles
+Canada     : 2 medailles
+Chine      : 3 medailles
+Coree      : 1 medaille
+Etats-Unis : 4 medailles
+Japon      : 2 medailles
+Russie     : 1 medaille
+
+Nombre total de médailles d'or, d'argent et de bronze obtenues par l'ensemble des pays
+Or     : 5 medailles
+Argent : 5 medailles
+Bronze : 5 medailles

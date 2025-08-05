@@ -1,0 +1,14 @@
+exo resize, push_back, pop_back
+Ecrivez les fonctions `my_resize`, `my_push_back` et `my_pop_back` de sorte que le code donné compile et aie l'effet décrit en commentaire.
+
+Attention, la fonction `my_resize` ne peut pas utiliser `vector::resize`, la fonction `my_push_back` ne peut pas utiliser `vector::push_back`, et la fonction `my_pop_back` ne peut pas utiliser `vector::pop_back`.
+
+check Output correct
+see 
+Given    : [1, 2, 3, 4, 5, 6]
+Pushed 7 : [1, 2, 3, 4, 5, 6, 7]
+Popped   : [1, 2, 3, 4, 5, 6]
+Popped   : [1, 2, 3, 4, 5]
+Resized 3: [1, 2, 3]
+Resized 5: [1, 2, 3, 1, 1]
+Resized 8: [1, 2, 3, 1, 1, 0, 0, 0]

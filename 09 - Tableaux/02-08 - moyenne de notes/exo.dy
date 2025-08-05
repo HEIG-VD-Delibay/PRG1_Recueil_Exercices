@@ -1,0 +1,12 @@
+exo Moyennes de notes
+Ecrire un programme C++ qui :
+1. demande à l'utilisateur de saisir une série de notes
+1. calcule la moyenne de ces notes
+1. affiche la moyenne de ces notes avec 2 chiffres après la virgule
+
+check Output correct
+see Entrez la liste de vos notes, 0 pour quitter :
+type 5 6 5.5
+type 4 3.5 0
+see nb de notes saisies = 5
+see La moyenne des notes saisies = 4.80

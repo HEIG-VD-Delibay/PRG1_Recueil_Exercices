@@ -1,0 +1,7 @@
+exo Remplacement de valeurs par une valeur donnée
+Ecrire une fonction C++ qui remplace toutes les valeurs paires d'un tableau d'entiers par une valeur donnée.
+
+check Output correct
+see 
+[1, 2, 3, 4, 3, 6, 4, 1, 2] -> [1, 0, 3, 0, 3, 0, 0, 1, 0]
+[3, 4, 5, 6, 2, 4, 3] -> [3, -1, 5, -1, -1, -1, 3]

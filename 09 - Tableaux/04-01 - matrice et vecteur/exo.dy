@@ -1,0 +1,8 @@
+exo Matrice et vecteur
+En utilisant des alias de types de `std::array`, définissez les types `Matrix3x3` et `Vec3` ainsi que les fonctions `produit`,
+`to_string(Vec3)` et `to_string(Matrix3x3)`.
+
+check Output correct
+see [[1, 1, 0]
+ [0, 2, 0]
+ [0, 0, 1]] * [1, 2, 3] = [3, 4, 3]
