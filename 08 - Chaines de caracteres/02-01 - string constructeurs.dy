@@ -1,0 +1,66 @@
+skill Chaines de caracteres
+exo [bzn] Constructeurs de la classe string
+Indiquer ce que va afficher la séquence d'instructions suivantes : 
+
+_Il se peut qu'une séquence provoque une erreur à la compilation ou à l'exécution, voire ait un comportement indéfini. Le cas échéant, répondez `COMP` ("Erreur à la compilation"), `EXEC` ("Erreur à l'exécution") ou `INDE` ("Comportement indéfini")_
+
+subexo
+~~~cpp
+string s1 = "ABC";
+string s2(s1, 1);
+cout << '|' << s2 << '|' << endl;
+~~~
+sol |BC|
+
+subexo
+~~~cpp
+string s1 = "ABC";
+string s2(s1, 2, 3);
+cout << '|' << s2 << '|' << endl;
+~~~
+sol |C|
+
+subexo
+~~~cpp
+string s1 = "ABC";
+string s2(s1, 3, 2);
+cout << '|' << s2 << '|' << endl;
+~~~
+sol ||
+
+subexo
+~~~cpp
+string s1 = "ABC";
+string s2(s1, 4, 1);
+cout << '|' << s2 << '|' << endl;
+~~~
+sol EXEC
+// TODO: faut-il uniformiser ces erreurs particulières partout ?
+
+subexo
+~~~cpp
+string s("ABC", 3);
+cout << '|' << s << '|' << endl;
+~~~
+sol |ABC|
+
+subexo
+~~~cpp
+string s("ABC", 4);
+cout << '|' << s << '|' << endl;
+~~~
+sol |ABC\0|
+
+subexo
+~~~cpp
+string s("ABC", 5);
+cout << '|' << s << '|' << endl;
+~~~
+sol INDE
+
+subexo
+~~~cpp
+string s(3, 'A');
+cout << '|' << s << '|' << endl;
+~~~
+sol |AAA|

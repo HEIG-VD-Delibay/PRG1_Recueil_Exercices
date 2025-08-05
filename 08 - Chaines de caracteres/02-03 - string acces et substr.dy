@@ -1,0 +1,124 @@
+skill Chaines de caracteres
+exo [ ], at, length, size, resize et substr
+Indiquer ce que va afficher la séquence d'instructions suivantes : 
+
+_Il se peut qu'une séquence provoque une erreur à la compilation ou à l'exécution, voire ait un comportement indéfini. Le cas échéant, répondez `COMP` ("Erreur à la compilation"), `EXEC` ("Erreur à l'exécution") ou `INDE` ("Comportement indéfini")_
+
+subexo
+~~~cpp
+string s = "ABC";
+cout << '|' << s[1] << '|' << endl;
+~~~
+sol |B|
+
+subexo
+~~~cpp
+string s1 = "ABC";
+string s2 = s1[1];
+cout << '|' << s2 << '|' << endl;
+~~~
+sol COMP
+exp Il n'y a pas de constructeur string(char)
+
+subexo
+~~~cpp
+string s1 = "ABC";
+string s2;
+s2 = s1[1];
+cout << '|' << s2 << '|' << endl;
+~~~
+sol |B|
+
+subexo
+~~~cpp
+string s = "ABC";
+cout << '|' << s[3] << '|' << endl;
+~~~
+sol |\0|
+
+subexo
+~~~cpp
+string s = "ABC";
+cout << '|' << s[4] << '|' << endl;
+~~~
+sol INDE
+
+subexo
+~~~cpp
+string s = "ABC";
+cout << '|' << s.at(3) << '|' << endl;
+~~~
+sol EXEC
+
+subexo
+~~~cpp
+string s;
+cout << s.length() << endl;
+~~~
+sol 0
+
+subexo
+~~~cpp
+string s = "ABC";
+cout << s.length() << endl;
+~~~
+sol 3
+
+subexo
+~~~cpp
+string s = "ABC";
+cout << s.size() << endl;
+~~~
+sol 3
+
+subexo
+~~~cpp
+string s = "ABC";
+s.resize(5);
+cout << '|' << s << '|' << endl;
+~~~
+sol |ABC\0\0|
+
+subexo
+~~~cpp
+string s = "ABC";
+s.resize(2, 'x');
+cout << '|' << s << '|' << endl;
+~~~
+sol |AB|
+
+subexo
+~~~cpp
+string s = "ABC";
+s.resize(4, 'x');
+cout << '|' << s << '|' << endl;
+~~~
+sol |ABCx|
+
+subexo
+~~~cpp
+string s = "ABCDE";
+cout << '|' << s.substr(1, 2) << '|' << endl;
+~~~
+sol |BC|
+
+subexo
+~~~cpp
+string s = "ABCDE";
+cout << '|' << s.substr(0, 10) << '|' << endl;
+~~~
+sol |ABCDE|
+
+subexo
+~~~cpp
+string s = "ABCDE";
+cout << '|' << s.substr(3) << '|' << endl;
+~~~
+sol |DE|
+
+subexo
+~~~cpp
+string s = "ABCDE";
+cout << '|' << s.substr() << '|' << endl;
+~~~
+sol |ABCDE|
