@@ -1,0 +1,20 @@
+exo Point avec opérateur en compilation séparée
+Réorganisez en compilation séparée le code fourni copié de la solution de l'exercice "04-01 Point avec operateurs".
+
+```text
+Point.h
+Point.cpp
+main.cpp
+```
+
+check Le résultat n'a pas changé
+see
+p1(1.2,2.4), p2(3.0,4.2)
+p1 + p2 = (4.2,6.6)
+p2 + p1 = (4.2,6.6)
+p1 + 2. = (3.2,4.4)
+2. + p1 = (3.2,4.4)
+p1 != p2
+p1 == p3
+
+// TODO: how to verify we have used all the files ??

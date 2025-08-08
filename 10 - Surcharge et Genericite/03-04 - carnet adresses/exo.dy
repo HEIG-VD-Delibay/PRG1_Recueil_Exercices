@@ -1,0 +1,20 @@
+exo Carnet d'adresses
+Faites en sorte que le code fourni puisse être affiché sous la forme définie par le check.
+
+check Output correct
+see
+prenom : Jean
+nom    : Veuxplus
+date   : 7.4.1975
+
+prenom : Alain
+nom    : Verse
+date   : 21.12.2018
+
+prenom : Justin
+nom    : Ptipeu
+date   : 1.8.2023
+
+prenom : Rémi
+nom    : Fasol
+date   : 17.5.1957

@@ -1,0 +1,17 @@
+exo Point avec constructeurs
+Modifiez la classe Point de l'exercice "Point" pour pouvoir donner une valeur initiale aux points
+
+Complétez le code suivant afin qu'il s'exécute correctement et affiche le résultat ci-après.
+
+```text
+(0,0)
+(1.2,2.4)
+(2,3)
+5.5 -- 10.3
+```
+
+check Output correct
+see (0,0)
+(1.2,2.4)
+(2,3)
+5.5 -- 10.3

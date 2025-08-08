@@ -1,0 +1,10 @@
+exo Point
+Implémenter une structure Point permettant de manipuler un point du plan.
+
+Complétez le code donné afin qu'il s'exécute correctement et affiche le bon résultat.
+
+check Output correct
+see (0,0)
+(1.2,2.4)
+(2,3)
+5.5 -- 10.3

@@ -1,0 +1,16 @@
+exo Surcharge des opérateurs
+Soit MonEntier une classe encapsulant un entier (de type int) sans en fournir ni setter ni getter.
+
+Compléter le code fourni pour passer le check.
+
+check Output correct
+see n = 0
+n = 1
+false
+true
+n = 1
+n = 2
+n = 3
+n = 8
+n = 8
+n = 12

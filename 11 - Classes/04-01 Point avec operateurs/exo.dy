@@ -1,0 +1,12 @@
+exo Point avec opérateurs
+Reprenez la classe Point de l'exercice "03-01 Point avec constructeurs" et faites les modifications / ajouts / suppressions nécessaires afin que le code fourni passe le check.
+
+check Output correct
+see
+p1(1.2,2.4), p2(3.0,4.2)
+p1 + p2 = (4.2,6.6)
+p2 + p1 = (4.2,6.6)
+p1 * 2. = (2.4,4.8)
+3. * p1 = (3.6,7.2)
+p1 != p2
+p1 == p3

@@ -1,0 +1,12 @@
+exo Point
+Modifiez la structure Point de l'exercice "Structure Point"
+pour mettre en oeuvre une classe Point qui stocke les coordonnées x,y dans des
+attributs privés.
+
+Complétez le code donné afin qu'il s'exécute correctement et affiche le bon résultat.
+
+check Output correct
+see (0,0)
+(1.2,2.4)
+(2,3)
+5.5 -- 10.3

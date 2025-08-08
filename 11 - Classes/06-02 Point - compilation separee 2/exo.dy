@@ -1,0 +1,14 @@
+exo Point avec un identifiant unique et un compteur en compilation séparée
+Réorganisez en compilation séparée le code fourni copié de la solution de l'exercice "03-02 Point avec limites de deplacement".
+
+check Le résultat n'a pas changé
+see
+Point ID = 1, (1.2,2.4), maxX = 100, maxY = 100
+Nombre de points : 1
+-------------------------------------------
+Point ID = 2, (3,4.2), maxX = 10, maxY = 10
+Nombre de points : 2
+-------------------------------------------
+Point ID = 3, (5,10), maxX = 100, maxY = 100
+Nombre de points : 2
+-------------------------------------------

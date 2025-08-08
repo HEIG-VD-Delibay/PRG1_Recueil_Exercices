@@ -1,0 +1,12 @@
+exo Nbre en Chiffres
+Ecrire le code nécessaire afin de traduire une valeur reçue en `int` en un `vector<Chiffre>` de chiffres correspondant.
+
+L'opérateur `<<` pour un `vector<Chiffre>` affiche les chiffres en toutes lettres. `123` donne `UN DEUX TROIS`.
+
+check Fonctionne avec 251
+args 251
+see DEUX CINQ UN
+
+check Fonctionne avec 1234567890
+args 1234567890
+see UN DEUX TROIS QUATRE CINQ SIX SEPT HUIT NEUF ZERO

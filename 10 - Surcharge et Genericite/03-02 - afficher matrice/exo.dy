@@ -1,0 +1,7 @@
+exo Afficher matrice
+Avec les déclarations génériques du code fourni, faire en sorte que l'affichage soit possible sur une ligne.
+
+Le mode pretty est disponible au prochain exercice.
+
+check Mode inline
+see [[0], [1, 2], [3, 4, 5], [6, 7, 8, 9]]

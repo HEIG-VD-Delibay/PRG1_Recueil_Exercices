@@ -1,0 +1,35 @@
+exo Voitures
+Écrivez une classe Voiture en C++ qui représente une voiture avec les caractéristiques suivantes :
+
+- capacité du réservoir,
+- consommation moyenne,
+- et le nombre de litres actuellement dans le réservoir.
+- La classe devrait avoir une méthode effectuerTrajet qui prend en paramètre la distance à parcourir en kilomètres et retourne le coût du trajet en carburant. Assurez-vous que le réservoir est mis à jour correctement après chaque trajet.
+- Le prix de l'essence est le même pour toutes les voitures.
+- La classe devrait également avoir une méthode getPrixEssence pour obtenir le prix actuel de l'essence, ainsi qu'une méthode setPrixEssence pour mettre à jour ce prix.
+- Fournissez également des fonctions auxiliaires afficherPrixEssence, afficherVoiture, et afficherCoutTrajet qui affichent respectivement le prix de l'essence, les détails de la voiture, et le coût du trajet.
+
+**Note :**
+- Le coût du trajet ne prend en compte que les frais d'essence
+- Faire l'hypothèse que le réservoir est toujours complètement vidé avant d'être complètement rempli (jamais de plein partiel)
+
+check Output correct
+see Prix de l'essence : 1.70 Frs
+
+Prix de l'essence : 1.95 Frs
+
+Capacite du reservoir [l]      : 52
+Consommation moyenne [l/100km] : 6.7
+Nb litres restants             : 52.0
+
+Cout du trajet : 130.65 Frs
+
+Capacite du reservoir [l]      : 52
+Consommation moyenne [l/100km] : 6.7
+Nb litres restants             : 37.0
+
+Cout du trajet : 26.13 Frs
+
+Capacite du reservoir [l]      : 52
+Consommation moyenne [l/100km] : 6.7
+Nb litres restants             : 23.6

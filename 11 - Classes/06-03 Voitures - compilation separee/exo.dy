@@ -1,0 +1,24 @@
+exo Voitures en compilation séparée
+Réorganisez  en compilation séparée le code fourni copié de la solution de l'exercice "Voiture".
+
+check Le résultat n'a pas changé
+see
+Prix de l'essence : 1.70 Frs
+
+Prix de l'essence : 1.95 Frs
+
+Capacite du reservoir [l]      : 52
+Consommation moyenne [l/100km] : 6.7
+Nb litres restants             : 52.0
+
+Cout du trajet : 130.65 Frs
+
+Capacite du reservoir [l]      : 52
+Consommation moyenne [l/100km] : 6.7
+Nb litres restants             : 37.0
+
+Cout du trajet : 26.13 Frs
+
+Capacite du reservoir [l]      : 52
+Consommation moyenne [l/100km] : 6.7
+Nb litres restants             : 23.6
