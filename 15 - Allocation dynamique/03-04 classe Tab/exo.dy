@@ -1,0 +1,41 @@
+exo Tableau dynamique
+Implémenter la classe `Tab` qui contient les propriétés privées suivantes
+
+| Propriété | Details                                                 |
+|:----------|:--------------------------------------------------------|
+| `T* _data` | Un pointeur sur une zone mémoire réservée dynamiquement |
+| `_size`   | La taille de la zone mémoire réservée dynamiquement     |
+
+check Output correct
+see
+------------
+   tab1     
+------------
+[0, 1, 2]
+size : 3
+
+------------
+   tab2     
+------------
+[0, 1, 2]
+size : 3
+
+------------
+   tab3     
+------------
+[0, 1, 2]
+size : 3
+
+------------
+   [] / at  
+------------
+tab1[0]     = 1; 
+tab1[0]     : 1
+
+tab1.at(1)  = 2; 
+tab1.at(1)  : 2
+tab1[3]     : 0
+tab3.at(3)  : exception : Tab::at(size_t pos) const
+
+
+fin de programme

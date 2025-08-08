@@ -1,0 +1,11 @@
+exo Vecteur d'itérateurs
+Soit le vecteur constant déclaré.
+~~~cpp
+const vector v {1, 2, 3, 2, 4, 2, 2, 6, 2};
+~~~
+
+Ecrire une fonction `vect_iter_val` qui reçoit un `vector<T>` **constant** et une valeur `<T>` et retourne un vecteur contenant des itérateurs sur chacune des valeurs correspondantes.
+
+check Recherche de la valeur `2`
+see vecteur d'entiers     : [1, 2, 3, 2, 4, 2, 2, 6, 2]
+vecteur d'iterateurs  : [2, 2, 2, 2, 2]

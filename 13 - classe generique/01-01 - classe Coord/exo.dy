@@ -1,0 +1,11 @@
+exo classe générique Coord
+Ecrire la classe `Coord` qui permet d'obtenir le résultat indiqué pour les instructions suivantes.
+
+check Output correct
+see origine  : (0, 0)
+p1       : (1, 2)
+p2       : (3, 4)
+p2->     : (4, 5)
+(x, y)
+
+// TODO: ya pas un bug qqepart sur la dernière ligne ??

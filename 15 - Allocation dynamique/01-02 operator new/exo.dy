@@ -1,0 +1,6 @@
+exo ::operator new, new(p), ...
+
+Ecrivez les fonctions f, g et éventuelles surcharges pour faire passer le check.
+
+check Output correct
+see CD C4 D4 C1 D0 D1

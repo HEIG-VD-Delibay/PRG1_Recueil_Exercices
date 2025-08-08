@@ -1,0 +1,13 @@
+exo classe générique Collection
+
+Ecrire la classe `Collection` pour que le code fourni passe le check.
+
+💡Le container est passé en paramètre générique `Collection<int, std::vector> s1;`
+
+check Output correct
+see [0, 1, 2, 3, 4, 5]
+[0, 1, 3, 4, 5]
+[chien, chat, souris]
+
+taille de s2 : 3
+s2 n'est pas vide

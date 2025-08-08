@@ -1,0 +1,5 @@
+exo new et delete
+Ecrivez les fonctions `f`, `g` et éventuelles surcharges pour faire passer le check.
+
+check Output correct
+see CD C2 D2 C3 D0 D3
