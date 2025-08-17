@@ -1,0 +1,14 @@
+exo Supprimer un élément d'une position donnée dans un vector
+Écrire une fonction C++ `removeFromVector` pour supprimer un élément d'une position donnée dans un tableau `std::vector<int>`. La fonction doit lever une(des) exception(s) en cas de problème(s) empêchant la suppression.
+
+*NB* L'exercice doit être résolu en utilisant exclusivement une(des) exception(s) prédéfinie(s).
+
+**Rappel** Hiérarchie des exceptions
+
+![Hiérarchie des exceptions en C++](../../schemas/exceptions-hierarchie.svg)
+
+check Output correct
+see
+Erreur: Position hors limites du vecteur
+1 2 4 5 
+Erreur: Suppression impossible, le vecteur est vide
