@@ -1,0 +1,18 @@
+exo Somme des n premiers entiers naturels
+Compléter le programme C++ fourni qui met à disposition une fonction `sommeNPremiersEntiers` permettant de sommer les `n` premiers entiers >= 0 et dont le prototype est `int sommeNPremiersEntiers(int n);`.
+
+Faire en sorte d'implémenter `sommeNPremiersEntiers` en tenant compte de toutes les situations problématiques potentielles.
+
+*NB* L'exercice doit être résolu en utilisant exclusivement une(des) exception(s) prédéfinie(s).
+
+**Rappel** Hiérarchie des exceptions
+
+![Hiérarchie des exceptions en C++](../../schemas/exceptions-hierarchie.svg)
+
+check Output correct
+see
+sommeNPremiersEntiers(-1) = : Argument non valide: n doit etre >= 0
+sommeNPremiersEntiers(0) = 0
+sommeNPremiersEntiers(1) = 1
+sommeNPremiersEntiers(65535) = 2147450880
+sommeNPremiersEntiers(65536) = : Un debordement est survenu dans les calculs
