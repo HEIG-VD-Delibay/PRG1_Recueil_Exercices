@@ -1,0 +1,10 @@
+exo struct - Date et Personne
+Ecrire les librairies *Date* et *Personne* pour faire passer le check.
+
+check Output correct
+see
+une date     : 30.10.2023
+
+Nom          : Anna
+Adresse      : Yverdon
+Anniversaire : 30.10.2023
