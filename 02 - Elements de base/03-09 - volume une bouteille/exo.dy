@@ -1,0 +1,39 @@
+exo Volume d'une bouteille
+Comme illustré ci-dessous, la forme d'une bouteille peut s'approximer par deux cylindres, de rayons `r1` et `r2` et de hauteurs `h1` et `h2`, joints par un cône tronqué de hauteur `h3`.
+
+Ecrire un programme C++ qui, après avoir demandé à l'utilisateur de saisir (en centimètres) les cinq paramètres ci-dessus, calcule puis affiche la contenance en litres de la bouteille.
+
+![](../assets/03-10_bouteille.jpg)
+
+**Volume d'un cylindre**
+$$\pi * r^2 * h$$
+
+**Volume d'un cône tronqué**
+$$(r1^2 + r2^2 + r1 * r2) * h * \pi / 3$$
+
+check Exemple d'une petite bouteille
+see Entrez le rayon du cylindre 1 [cm]      :
+type 4
+see Entrez le rayon du cylindre 2 [cm]      :
+type 1
+see Entrez la hauteur du cylindre 1 [cm]    :
+type 12
+see Entrez la hauteur du cylindre 2 [cm]    :
+type 1
+see Entrez la hauteur du tronc de cone [cm] :
+type 3
+see La contenance de la bouteille est de 0.672301 litre.
+
+// TODO: okay ce nouveau check ? tiré d'un test sur le code de solution
+check Exemple d'une grande bouteille
+see Entrez le rayon du cylindre 1 [cm]      :
+type 8
+see Entrez le rayon du cylindre 2 [cm]      :
+type 3
+see Entrez la hauteur du cylindre 1 [cm]    :
+type 30
+see Entrez la hauteur du cylindre 2 [cm]    :
+type 2
+see Entrez la hauteur du tronc de cone [cm] :
+type 4
+see La contenance de la bouteille est de 6.49472 litres.

@@ -1,0 +1,21 @@
+exo Sauvegarde de texte dans un fichier
+Écrire un programme en C++ qui fait ce qui suit :
+- Demander à l'utilisateur de saisir le nom du fichier de sortie.
+- Si le fichier existe déjà, il ne doit pas être écrasé.
+- Demander à l'utilisateur de saisir du texte et enregistrez le texte saisi dans le fichier de sortie. Répéter cette action tant que l'utilisateur n'a pas terminé.
+- Pour terminer la saisie, l'utilisateur pourra taper #exit# dans une ligne séprée ou utiliser Ctrl+D.
+
+S'assurer que le programme gère les erreurs d'ouverture de fichier.
+
+Ps : simlulation du *EOF* (End of File). Ctrl+D et Ctrl+Z sur Unix et Windows, respectivement.Cmd+D sur Mac
+
+check Output correct
+see Entrez le nom du fichier où enregistrer le texte :
+type test.txt
+see Entrez le texte à enregistrer dans le fichier (Ctrl+D ou #exit# pour terminer la saisie) :
+type hello there !
+type coding in C++ is fun
+type #exit#
+see Le texte a été enregistré avec succès dans le fichier.
+
+// TODO: how to verify the content of test.txt ??
