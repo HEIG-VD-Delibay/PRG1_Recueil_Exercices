@@ -35,9 +35,17 @@ subexo [rvt]
 sol int
 
 subexo [iiq]
-`auto var9 = var1 / var8;`
+```cpp
+auto var1 = 10;
+auto var8 = 3;
+auto var9 = var1 / var8;
+```
 sol int
 
 subexo [fpz]
-`auto var10 = var1 / var4;`
+```cpp
+auto var1 = 10;
+auto var4 = 0.5;
+auto var10 = var1 / var4;
+```
 sol double
