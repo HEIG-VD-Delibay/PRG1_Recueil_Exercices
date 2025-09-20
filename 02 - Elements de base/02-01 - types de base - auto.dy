@@ -1,0 +1,43 @@
+skill Elements de base
+exo [lrg] Types de base - auto
+Indiquez le type de la variable après l'initialisation avec le mot clé auto.
+
+subexo [env]
+`auto var1 = 10;`
+sol int
+
+subexo [yzn]
+`auto var2 = 1.;`
+sol double 
+
+subexo [ydr]
+`auto var3 = '1';`
+sol char
+
+subexo [qeg]
+`auto var4 = 0.5;`
+sol double 
+
+subexo [ory]
+`auto var5 = 'r';`
+sol char
+
+subexo [wgs]
+`auto var6 = true;`
+sol bool
+
+subexo [jpe]
+`auto var7 = 25.0;`
+sol double 
+
+subexo [rvt]
+`auto var8 = 3;`
+sol int
+
+subexo [iiq]
+`auto var9 = var1 / var8;`
+sol int
+
+subexo [fpz]
+`auto var10 = var1 / var4;`
+sol double
