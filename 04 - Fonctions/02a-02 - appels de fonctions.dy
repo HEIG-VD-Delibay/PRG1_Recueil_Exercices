@@ -1,0 +1,47 @@
+skill Fonctions
+exo [wsa] Que produit ce code
+
+Déterminer "à la main" ce que poduit ce code.
+
+~~~cpp
+#include <cmath>
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+double k(double x) { return 2 * (x + 1);        }
+double h(double x) { return x * x + k(x) - 1;   }
+double g(double x) { return 4 * h(x);           }
+double f(double x) { return g(x) + sqrt(h(x));  }
+~~~
+
+subexo [gux] 
+~~~cpp
+cout << f(2); //1
+~~~
+sol 39
+
+subexo [dis] 
+~~~cpp
+cout << g(h(2)); //2
+~~~
+sol 400
+
+subexo [uwg]
+~~~cpp 
+cout << k(g(2) + h(2)); //3
+~~~
+sol 92
+
+subexo [sjr]
+~~~cpp 
+cout << f(0) + f(1) + f(2); //4
+~~~
+sol 62
+
+subexo [hgo]
+~~~cpp 
+cout << f(-1) + g(-1) + h(-1) + k(-1); //5
+~~~
+sol 0
