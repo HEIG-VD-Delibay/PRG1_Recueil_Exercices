@@ -1,0 +1,38 @@
+skill Elements de base
+exo [dky] Opérateurs
+
+Que va afficher le programme C++ suivant ?
+
+subexo [kyq] A
+~~~cpp
+int i, j, k;
+i = 0; k = i++;
+cout << "i = " << i << " k = " << k << endl;
+~~~
+sol i = 1 k = 0
+
+subexo [lgz] B
+~~~cpp
+int i, j, k;
+i = 1; k = ++i;
+cout << "i = " << i << " k = " << k << endl;
+~~~
+sol i = 2 k = 2
+
+subexo [fey] C
+~~~cpp
+int i, j, k;
+i = 2; j = 3;
+k = i++ * ++j;
+cout << "i = " << i << " j = " << j << " k = " << k << endl;
+~~~
+sol i = 3 j = 4 k = 8
+
+subexo [cpg] D
+~~~cpp
+int i, j, k;
+i = 3; j = 4;
+k = i *= --j;
+cout << "i = " << i << " j = " << j << " k = " << k << endl;
+~~~
+sol i = 9 j = 3 k = 9

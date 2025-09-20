@@ -1,0 +1,41 @@
+skill Elements de base
+exo [zeg] Division entière et réelle
+
+Soient les déclarations suivantes :
+
+~~~cpp
+int i = 5, j = 11;
+double x = 5, y = 11;
+
+double m = 0;
+~~~
+
+Que vaut la variable m dans le cas ci-dessous ?
+
+subexo [xbv] 
+`m = j / i;`
+sol 2
+
+subexo [gpf] 
+`m = y / x;`
+sol 2.2 
+
+subexo [vqb] 
+`m = j / i + 1.0;`
+sol 3   
+
+subexo [sdd] 
+`m = y / x + 1;`
+sol 3.2 
+
+subexo [swy] 
+`m = y / x + j / i`
+sol 4.2 
+
+subexo [pgr] 
+`m = i + y / x;`
+sol 7.2 
+
+subexo [myl] 
+`m = x + j / i;`
+sol 7

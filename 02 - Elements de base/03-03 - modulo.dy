@@ -1,0 +1,34 @@
+skill Elements de base
+exo [fhk] Modulo
+Soient les déclarations suivantes :
+
+~~~cpp
+int i = 5, j = 11, n = 10;
+double x = 5, y = 11;
+~~~
+
+Quel est le résultat d'évaluation de l'expression suivante ? en cas d'erreur, indiquez `INCO` et justifier de tête la raison.
+TODO: méthode et consigne ok ?
+
+subexo [cqe] `j % i` 
+sol 1
+
+subexo [zsd] `n % i`
+sol 0
+
+subexo [zaa] `y % x`
+sol INCO
+exp Erreur, le modulo n'est pas défini pour les réels
+
+subexo [srx] `y % i` 
+sol INCO
+exp Erreur, le modulo n'est pas défini pour les réels
+
+subexo [kkp] `-j % i` 
+sol -1
+
+subexo [xrb] `n % ++i` 
+sol 4
+
+subexo [nnx] `n++ % ++i` 
+sol 4
