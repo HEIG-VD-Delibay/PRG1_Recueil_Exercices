@@ -1,0 +1,36 @@
+skill Elements de base
+exo [ghn] Comparer des chaines de caracatères
+
+Soient les déclarations suivantes :
+
+~~~cpp
+string s1 = "prg1";
+string s2 = "prg2";
+string s3 = "pdl";
+string s4 = "prg";
+string s5 = "pdg23";
+string s6 = "Prg1";
+~~~
+
+Quel est le résultat d'évaluation de l'expression suivante ? Pourquoi ?
+
+TODO: doit-on forcer le boolean en texte ???
+subexo [sdr] `s1 < s2`
+sol true
+exp premier caractère différent '1' < '2'
+
+subexo [yky] `s1 > s3`
+sol true
+exp premier caractère différent 'r' > 'd'
+
+subexo [xpx] `s1 < s4`
+sol false
+exp on atteint la fin de s4 sans trouver de caractères différents et s4 est plus courte que 
+
+subexo [nhe] `s3 > s5`
+sol true
+exp premier caractère différent 'l' > 'g'
+
+subexo [yyv] `s1 > s6`
+sol true
+exp premier caractère différent 'p' > 'P'

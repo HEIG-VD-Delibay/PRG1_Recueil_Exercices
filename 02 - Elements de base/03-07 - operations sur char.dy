@@ -1,0 +1,40 @@
+skill Elements de base
+exo [dop] Opérations sur le type char
+
+Que va afficher le programme C++ suivant ?
+
+~~~cpp
+char x = 'A'; // 65
+char y = '0'; // 48
+char z;
+~~~
+
+subexo [kek]
+~~~cpp
+z = x + 4;
+cout << z << endl; // 1
+~~~
+sol E
+TODO: ok et utile de mettre // 1 pour retirer le numéro de l'output mais garder cette info visible ?
+
+subexo [cco]
+~~~cpp
+z = x + 4;
+cout << ++z << endl; // 2
+~~~
+sol F
+TODO: okay d'avoir coupé le 1 et 2 comme ça ?
+
+subexo [nku]
+~~~cpp
+z = x + 0;
+cout << z << endl; // 3
+~~~
+sol A
+
+subexo [vdk]
+~~~cpp
+z = x + '0';
+cout << z << endl; // 4
+~~~
+sol q

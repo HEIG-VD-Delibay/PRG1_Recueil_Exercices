@@ -1,0 +1,43 @@
+skill Elements de base
+exo [yuf] Références
+
+Coder en C++ la question suivante. Indiquer `IMP` si impossible.
+
+subexo [zhi]
+Créer une variable `var1` initialisée 1
+sol int var1 = 1;
+
+subexo [xig]
+Créer une référence `ref1` sur `var1`
+sol int& ref1 = var1;
+
+subexo [zgj]
+Créer une référence `ref2` non initialisée
+sol IMP
+exp Pas possible, une référence est toujours initialisée
+
+subexo [ken]
+Passer la valeur de `var1` à 2
+sol var1 = 2;
+
+subexo [ttx]
+Passer la valeur de `ref1` à 3
+sol ref1 = 3;
+
+subexo [xuc]
+Afficher la valeur de `var1`
+sol cout << var1;
+exp `=> 3`
+
+subexo [itz]
+Afficher la valeur de `ref1`
+sol cout << ref1;
+exp `=> 3`. Au contraire des pointeurs, aucune syntaxe particulière
+
+subexo [zrw]
+A quoi correspond la déclaration de `ref1`
+sol int* const ref1 = &var1
+
+subexo [vow]
+A quoi correspond la déclaration d'une référence constante
+sol const int* const refCste = &var1

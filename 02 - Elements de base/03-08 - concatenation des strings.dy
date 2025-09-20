@@ -1,0 +1,45 @@
+skill Elements de base
+exo [zfs] Concaténation
+
+Indiquer la valeur de la variable `s` après pour la séquence d'instructions suivantes. Si erreur indiquer `INCO`.
+
+subexo [aso]
+~~~cpp
+string s = string("A") + "BC";
+~~~
+sol ABC
+
+subexo [pdc]
+~~~cpp
+string s = string("AB") + 'C';
+~~~
+sol ABC
+
+subexo [fbn]
+~~~cpp
+string s = "A" + "BC";
+~~~
+sol INCO
+
+subexo [ing]
+~~~cpp
+string s = "AB";
+s += 'C';
+~~~
+sol ABC
+
+subexo [znu]
+~~~cpp
+string s = "AB";
+string ss = s + 5;
+~~~
+sol INCO
+
+subexo [zss]
+~~~cpp
+string s = "PRG";
+string s1 = "2023-01-01";
+s += s1[4]; 
+s += s1[6];
+~~~
+sol PRG-1

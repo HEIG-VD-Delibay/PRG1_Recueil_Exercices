@@ -1,0 +1,63 @@
+skill Elements de base
+exo [ziw] Pointeurs
+
+Coder en C++ la question suivante. Indiquer `IMP` si impossible.
+
+subexo [pfr]
+Créer une variable `var1` initialisée 1
+sol int var1 = 1;
+
+subexo [qbk]
+Créer une variable `var2` initialisée 2
+sol int var2 = 2;
+
+subexo [pgj]
+Créer une constante `cste` initialisée 3
+sol const int cste = 3;
+
+subexo [whg]
+Créer un pointeur non constant `ptr1` non initialisé
+sol int* ptr1;
+
+subexo [umg]
+Créer un pointeur non constant `ptr2` pointant sur `var2`
+sol int* ptr2 = &var2;
+
+subexo [imq]
+Faire pointer `ptr1` sur `var1`
+sol ptr1 = &var1;
+
+subexo [iwv]
+Modifier la valeur pointée par `ptr1` à 2
+sol *ptr1 = 2;
+
+subexo [tcf]
+Afficher "oui" ou "non" selon si `ptr1` et `ptr2` pointent sur la même variable. Ne pas utiliser de `if`.
+sol cout << (ptr1 == ptr2 ? "oui" : "non");
+
+subexo [ebq]
+Afficher "oui" ou "non" selon si `ptr1` et `ptr2` pointent sur une valeur identique. Ne pas utiliser de `if`.
+sol cout << (*ptr1 == *ptr2 ? "oui" : "non");
+
+subexo [dem]
+Afficher l'addresse où se trouve `var1`
+sol cout << &var1;
+
+subexo [azb]
+Afficher le contenu de `ptr1`  
+Que peut-on dire de cette valeur ?
+sol cout << ptr1;
+exp => ce sera la même que `&var1`
+
+subexo [skc]
+Afficher l'addresse où se trouve `ptr1`
+sol cout << &ptr1;
+
+subexo [awr]
+Faire pointer `ptr1` sur `cste`
+sol IMP
+exp Pas possible, un `int*` (avec droit RW) ne peut pas pointer sur une constante `const int ...`
+
+subexo [emb]
+Déclarer un pointer non constant `ptr3` sur `cste`
+sol const int* ptr3 = &cste;
