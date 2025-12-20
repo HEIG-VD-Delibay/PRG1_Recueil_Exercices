@@ -14,16 +14,16 @@ subexo [kek]
 z = x + 4;
 cout << z << endl; // 1
 ~~~
+// TODO: ok et utile de mettre // 1 pour retirer le numéro de l'output mais garder cette info visible ?
 sol E
-TODO: ok et utile de mettre // 1 pour retirer le numéro de l'output mais garder cette info visible ?
 
 subexo [cco]
 ~~~cpp
 z = x + 4;
 cout << ++z << endl; // 2
 ~~~
+// TODO: okay d'avoir coupé le 1 et 2 comme ça ?
 sol F
-TODO: okay d'avoir coupé le 1 et 2 comme ça ?
 
 subexo [nku]
 ~~~cpp

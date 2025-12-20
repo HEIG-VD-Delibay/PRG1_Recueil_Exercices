@@ -11,8 +11,8 @@ int n = 1;
 n = 1 – 2 * n;
 n = n + 1;
 ~~~
+//TODO: possible de développer un check de match exact pour autocorriger si la solution de référence est donnée ? Ou alors faut-il pas de [reference] juste ici ?
 sol [reference] `n = 0`
-TODO: possible de développer un check de match exact pour autocorriger si la solution de référence est donnée ? Ou alors faut-il pas de [reference] juste ici ?
 
 subexo [xuh] 
 ~~~cpp

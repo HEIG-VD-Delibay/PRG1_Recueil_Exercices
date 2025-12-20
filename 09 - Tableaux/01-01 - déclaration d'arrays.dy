@@ -30,13 +30,6 @@ array<int,3> a{1,2,3,4};
 for(int e : a) cout << e << ' ';
 ~~~
 sol COMP
-exp
-```
-main.cpp: In function ‘int main(int, char**)’:
-main.cpp:7:31: error: too many initializers for ‘std::array<int, 3>’
-    7 |     array<int, 3> a{1, 2, 3, 4};
-      |                               ^
-```
 
 subexo [xmj]
 ~~~cpp
