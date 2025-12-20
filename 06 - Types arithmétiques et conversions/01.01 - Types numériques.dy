@@ -1,0 +1,74 @@
+skill Types arithmétiques et conversions
+exo [mcw] Types numériques (théorie)
+
+// TODO: garder les numéros ou pas ?
+// TODO: possible de transformer les 2 premiers sous-exos en un type autocorrigé ?
+
+subexo [zpx] [open]
+1. Dressez la liste exhaustive de tous les types entiers **signés** supportés par C++ 
+
+exp
+
+~~~cpp 
+// chaque ligne correspond à un type qui peut s'écrire de diverse manières.
+
+signed char;
+signed short int; signed short; short int; short; 
+signed int; int; signed;
+signed long int; signed long; long int; long;
+signed long long int; signed long long; long long int; long long; 
+~~~
+
+Notons que l'ordre des mots clés peut également varier. Par exemple, le type `signed long long int` peut 
+aussi s'écrire 
+
+~~~cpp 
+signed long long int; 
+signed long int long; 
+signed int long long; 
+long signed long int; 
+long signed int long;
+// etcetera ... 
+~~~
+
+subexo [pqd] [open]
+2. Dressez la liste exhaustive de tous les types entiers **non signés** supportés par C++ 
+
+exp 
+
+~~~cpp 
+unsigned char;
+unsigned short int; unsigned short; 
+unsigned int; unsigned;
+unsigned long int; unsigned long; 
+unsigned long long int; unsigned long long; 
+~~~
+
+subexo [pxe] 
+
+3. Le type int est-il signé ou non signé par défaut ?
+opt
+- signé
+- non signé
+- cela dépend du compilateur
+
+sol signé
+
+subexo [abj] 
+
+4. Le type char est-il signé ou non signé par défaut ? 
+opt
+- signé
+- non signé
+- cela dépend du compilateur
+
+sol cela dépend du compilateur
+
+subexo [zyu] 
+
+5. Le domaine de définition des entiers est-il fixé par la norme ou dépend-il de l'environnement utilisé ?
+opt
+- Par la norme
+- Dépend de l'environnement utilisé
+
+sol Dépend de l'environnement utilisé

@@ -1,0 +1,84 @@
+skill Types arithmétiques et conversions
+exo [jju] Evaluation d'expressions
+
+TODO: garder ce code parent ou juste mettre `cout << fixed << setprecision(0);` ?
+TODO: exo en double, garder le int main(){ sans accolade fermante ?
+TODO: add INDEF !
+
+Que va afficher le programme ci-dessous ? Expliquer les résultats obtenus.
+
+~~~cpp
+#include <cstdlib>
+#include <iomanip>
+#include <iostream>
+using namespace std;
+
+int main(){
+   cout << fixed << setprecision(0); 
+   ...
+
+~~~
+
+subexo [ndq] 
+~~~cpp
+cout << 3 * 1000 * 1000 * 1000 << endl; //1
+~~~
+sol -1294967296
+exp
+Résultat indéfini car multiplication entière induisant un débordement. Le résultat affiché est probable pour un entier codé en complément à 2.
+
+subexo [xha] 
+~~~cpp
+cout << 3.0 * 1000 * 1000 * 1000 << endl; //2
+~~~
+sol 3000000000
+exp 
+Résultat juste car multiplications successives réelles
+
+subexo [rkm] 
+~~~cpp
+cout << 100000 * 100000 * 100000.0 << endl; //3
+~~~
+sol 141006540800000
+exp
+Résultat indéfini car la première multiplication s'effectue sur les entiers => débordement. Le résultat affiché est probable pour un entier codé en complément à 2.
+
+subexo [kyj]
+~~~cpp 
+cout << 100000.0 * 100000 * 100000 << endl; //4
+~~~
+sol 1000000000000000
+exp
+Résultat juste car multiplications successives réelles
+
+subexo [qoy] 
+~~~cpp
+cout << 1E7 + 1.0 << endl; //5
+~~~
+sol 10000001
+exp
+Résultat juste.
+
+subexo [lim] 
+~~~cpp
+cout << 1E7f + 1.f << endl; //6
+~~~
+sol 10000001
+exp
+Résultat juste.
+
+subexo [rvc] 
+~~~cpp
+cout << 1E8 + 1.0 << endl; //7
+~~~
+sol 100000001
+exp
+Résultat juste.
+
+subexo [rkj] 
+~~~cpp
+cout << 1E8f + 1.f << endl; //8
+~~~
+sol 100000000
+exp
+Résultat arrondi (en base 2) dû à la précision insuffisante des calculs avec le type `float`

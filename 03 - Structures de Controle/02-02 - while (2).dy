@@ -1,0 +1,74 @@
+skill Structures de Controle
+exo [jym] `while` (2)
+Que va afficher à l'exécution chacun des groupes d'instructions ci-dessous ?
+subexo [hsd]
+~~~cpp
+// 1
+int i = 0;
+while (i <= 5) 
+   i++;
+cout << i;
+~~~
+sol 6
+
+subexo [nri]
+~~~cpp
+// 2
+int i = 0, j = 0;
+while (i <= 5) 
+   i += j++;
+cout << i << ' ' << j;
+~~~
+sol 6 4
+
+subexo [gxl]
+~~~cpp
+// 3
+int i = 0, j = 0;
+while (i <= 5) 
+   i += ++j;
+cout << i << ' ' << j;
+~~~
+sol 6 3
+
+subexo [ekn]
+~~~cpp
+// 4
+int i = 0, j = 0;
+while (j <= 5) 
+   i += j++;
+cout << i << ' ' << j;
+~~~
+sol 15 6
+
+subexo [xhi]
+~~~cpp
+//5
+int i = 0, j = 0;
+while (j <= 5)
+   i += ++j;
+cout << i << ' ' << j;
+~~~
+sol 21 6
+
+subexo [dpy]
+~~~cpp
+// 6
+int i = 0, j = 0;
+while (i <= 5) i += 2; j++;
+cout << i << ' ' << j;
+~~~
+sol 6 1
+TODO: make sure this code is not indented ?!! and other exos while like this in while(1)...
+
+exp
+Notons que proprement indenté, le code est:
+~~~cpp
+int i = 0, j = 0;
+while (i <= 5) 
+   i += 2; 
+j++;
+cout << i << ' ' << j;
+~~~
+
+et `j++;` n'est donc pas dans la boucle

@@ -1,0 +1,88 @@
+skill Structures de Controle
+# `while` (1)
+
+Que va afficher à l'exécution chacun des groupes d'instructions ci-dessous ?
+
+subexo [oty]
+~~~cpp
+// 1
+int i = 0;
+while (i - 10) {
+   i += 2; cout << i << " ";
+}
+~~~
+sol 2 4 6 8 10
+
+subexo [rye]
+~~~cpp
+// 2
+int i = 0;
+while (i - 10)
+   i += 2; cout << i << " ";
+~~~
+sol 10
+exp Noter que `cout` ne fait pas partie de la boucle
+
+subexo [nie]
+~~~cpp
+// 3
+int i = 0;
+while (i < 11) {
+   i += 2; cout << i << " ";
+}
+~~~
+sol 2 4 6 8 10 12
+
+subexo [kwb]
+~~~cpp
+// 4
+int i = 11;
+while (i--) {
+   cout << i-- << " ";
+}
+~~~
+sol 10 8 6 4 2 0 -2 -4 …
+exp boucle infinie
+TODO: gérer ces valeurs infinies ! (dire "mettez 5 valeurs puis ..." ? ou juste INF)
+
+subexo [bns]
+~~~cpp
+//5
+int i = 12;
+while (i--) {
+   cout << --i << " ";
+}
+~~~
+sol 10 8 6 4 2 0
+
+subexo [qgv]
+~~~cpp
+// 6	
+int i = 0;
+while (i++ < 10) {
+   cout << i-- << " ";
+}
+~~~
+sol 1 1 1 1 1 1 1 1 .... 
+exp boucle infinie
+TODO: gérer ces valeurs infinies ! (dire "mettez 5 valeurs puis ..." ? ou juste INF)
+
+subexo [xbf]
+~~~cpp
+// 7	
+int i = 1;
+while (i <= 5) {
+   cout << 2 * i++ << " ";
+}
+~~~
+sol 2 4 6 8 10
+
+subexo [ruf]
+~~~cpp
+// 8
+int i = 1;
+while (i != 9) {
+   cout << (i = i + 2) << " ";
+}
+~~~
+sol 3 5 7 9

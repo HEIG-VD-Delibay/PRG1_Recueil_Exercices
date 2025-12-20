@@ -1,0 +1,105 @@
+skill Structures de Controle
+// TODO: migrate to non open exo when there is multiline support
+exo [tis] [open] boucles imbriquées
+
+Que va afficher à l'exécution chacun des groupes d'instructions ci-dessous ?
+
+subexo [wva]
+~~~cpp
+// 1
+for (int i = 1; i <= 3; ++i) {
+   for (int j = 1; j <= 4; ++j) {
+      cout << "*";
+   }
+   cout << endl;
+}
+~~~
+
+exp [multiline]
+~~~
+****
+****
+****
+~~~
+
+subexo [zdk]
+~~~cpp
+// 2
+for (int i = 0; i < 4; ++i) {
+   for (int j = 0; j < 3; ++j) {
+      cout << "*";
+   }
+   cout << endl;
+}
+~~~
+
+exp [multiline]
+~~~
+***
+***
+***
+***
+~~~
+
+subexo [xpr]
+~~~cpp
+// 3
+for (int i = 1; i <= 4; ++i) {
+   for (int j = 1; j <= i; ++j) {
+      cout << "*";
+   }
+   cout << endl;
+}
+~~~
+
+exp [multiline]
+~~~
+*
+**
+***
+****
+~~~
+
+subexo [joh]
+~~~cpp
+// 4
+for (int i = 1; i <= 3; ++i) {
+   for (int j = 1; j <= 5; ++j) {
+      if (j % 2 == 0) {
+         cout << "o";
+      } else {
+         cout << "x";
+      }
+   }
+   cout << endl;
+}
+~~~
+
+exp [multiline]
+~~~
+xoxox
+xoxox
+xoxox
+~~~
+
+subexo [sfq]
+~~~cpp
+for (int i = 1; i <= 3; ++i) {
+   for (int j = 1; j <= 5; ++j) {
+      if ( (i + j) % 2 == 0) {
+         cout << "o";
+      } else {
+         cout << "x";
+      }
+   }
+   cout << endl;
+}
+~~~
+
+
+exp [multiline]
+~~~
+oxoxo
+xoxox
+oxoxo
+~~~

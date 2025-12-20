@@ -1,0 +1,47 @@
+skill Types arithmétiques et conversions
+exo [kcl] Evaluations d'expressions (2)
+Soient les déclarations suivantes :
+~~~cpp
+int i = 5, j = 11; 
+~~~
+
+Indiquer ce que vaut la variable dans le cas suivant:
+**NB** Noter la réponse sous forme décimale
+
+subexo [nvz]
+~~~cpp
+double x1 = (double) j / i;
+~~~
+sol 2.2
+exp 
+division réelle
+
+subexo [pcl]
+~~~cpp
+double x2 = double(j / i);
+~~~
+sol 2.0
+exp 
+division entière
+
+subexo [nvo]
+~~~cpp
+double x3 = j / i + .5;
+~~~
+sol 2.5
+
+subexo [iic]
+~~~cpp
+double x4 = (double) j / i + .5;
+~~~
+sol 2.7
+exp 
+division réelle
+
+subexo [shi]
+~~~cpp
+double x5 = (int)( j + .5) / i;
+~~~
+sol 2.0
+exp
+division entière
