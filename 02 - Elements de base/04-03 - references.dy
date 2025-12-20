@@ -36,8 +36,8 @@ exp `=> 3`. Au contraire des pointeurs, aucune syntaxe particulière
 
 subexo [zrw]
 A quoi correspond la déclaration de `ref1`
-sol int* const ref1 = &var1
+sol int* const ref1 = &var1;
 
 subexo [vow]
 A quoi correspond la déclaration d'une référence constante
-sol const int* const refCste = &var1
+sol const int* const refCste = &var1;

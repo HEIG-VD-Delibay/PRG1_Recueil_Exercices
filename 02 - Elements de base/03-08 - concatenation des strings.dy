@@ -43,3 +43,11 @@ s += s1[4];
 s += s1[6];
 ~~~
 sol PRG-1
+
+
+subexo [bfd]
+~~~cpp
+string s = "PRG";
+s += to_string(1);
+~~~
+sol PRG
