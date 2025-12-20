@@ -1,0 +1,90 @@
+skill Structure_Enum
+exo [wks] struct - accès aux membres
+Soient les déclarations ci-dessous.
+
+~~~cpp
+struct Coord {
+   int x, y, z;
+};
+
+struct Cercle {
+   Coord centre;
+   int   rayon;
+};
+
+const Coord origine = {0, 0, 0};
+Cercle cercle = {1, {2, 3, 4}};
+Cercle* ptr = &cercle;
+~~~
+
+La déclaration suivante est-elle correcte ?
+
+subexo [vfw]
+```cpp
+cout << cercle.rayon;
+```
+sol true  
+exp affiche le rayon => 1  
+
+subexo [drp]
+```cpp
+cout << cercle->rayon;
+```
+sol false  
+exp remplacer l'opérateur `->` par un `.` 
+
+subexo [zjl]
+```cpp
+cout << *(&cercle).rayon;
+```
+sol false  
+exp selon la priorité des opérateurs, `.` est fait avant le `*`
+
+subexo [yug]
+```cpp
+cercle.centre = origine;
+```
+sol true  
+exp le membre `centre` est affectée par les valeurs de `origine` 
+
+subexo [kjc]
+```cpp
+ptr.rayon = 2;
+```
+sol false  
+exp `ptr` n'a pas de membre, il faut d'abord le déréférencer `(*ptr).rayon = 2;` ou `ptr->rayon = 2;`  
+
+subexo [ytz]
+```cpp
+*ptr.rayon = 2;
+```
+sol false  
+exp l'opérateur `.` est trop prioritaire`(*ptr).rayon = 2;` ou `ptr->rayon = 2;`  
+
+subexo [vcb]
+```cpp
+cercle.centre.x = 2;
+```
+sol true  
+exp `cercle.cord` pour descendre dans `Coord` puis `.x` pour accéder au membre `x`.  
+
+subexo [vlc]
+```cpp
+ptr.centre.x = 2;
+```
+sol false  
+exp il faut déréférencer le `ptr` puis descendre dans la structure `(*ptr).centre.x` ou `ptr->centre.x;`  
+
+subexo [xfe]
+```cpp
+Coord coord1 = cercle.centre;
+```
+sol true  
+exp `cercle.centre` est utilisée pour initialiser `coord1` 
+
+subexo [fcg]
+```cpp
+Coord coord2 = ptr->centre;
+```
+sol true  
+exp `cercle.centre` pointée par `ptr` est utilisée pour initialiser `coord2`

@@ -1,0 +1,86 @@
+skill Structure_Enum
+exo [pdk] struct - déclaration
+Soient les `struct` ci-dessous.
+
+~~~cpp
+struct Coord {
+   int x, y, z;
+};
+
+struct Cercle {
+   int   rayon;
+   Coord centre;
+};
+~~~
+
+Que vaut les valeurs des attributs de la structure ?
+
+Format attendu:
+- Pour `cercle` donnez sous le format `<rayon> <coord x> <coord y> <coord z>`
+- Pour `coord` donnez sous la forme `<coord x> <coord y> <coord z>`
+- Une valeur indéterminée doit être décrite par `?`
+- Si l'expression est incorrecte et ne compile pas indiquez `COMP`
+
+subexo [ewx]
+
+~~~cpp
+Cercle cercle = {1, {2, 3, 4}};
+~~~
+sol 1 2 3 4 
+exp l'agrégat est complet
+
+subexo [vif]
+```cpp
+Cercle cercle = {1};
+```
+sol 1 0 0 0 
+exp seul le rayon est renseigné, le reste à `0`   
+
+subexo [uug]
+```cpp
+Cercle cercle = {};
+```
+sol 0 0 0 0 
+exp l'agrégat est vide, donc tout est à `0` 
+
+subexo [ali]
+```cpp
+Cercle cercle = {1, {2, 3}};
+```
+sol 1 2 3 0 
+exp manque la valeur de Z, => à `0`
+
+subexo [pll]
+```cpp
+Cercle cercle = {1, 2, 3, 4};
+```
+sol 1 2 3 4 
+exp tout est renseigné en séquence
+
+subexo [bsg]
+```cpp
+Coord  coord  = {x=1, y=2, z=3};
+```
+sol COMP
+exp erreur de syntaxe, manque les `.`  exemple : `.x=1`
+
+subexo [ynt]
+```cpp
+Coord  coord  = {.x=1, .y=2, .z=3};
+```
+sol 1 2 3 
+exp tout est renseigné par nom   
+
+subexo [sbx]
+```cpp
+Coord  coord  = {.x=1,  .z=3};
+```
+sol 1 0 3 
+exp la valeur manquante est déterminée et vaut `0`
+
+subexo [wwx]
+```cpp
+Coord  coord;
+```
+sol ? ? ? 
+exp les valeurs sont indéterminées.

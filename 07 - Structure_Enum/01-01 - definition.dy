@@ -1,0 +1,118 @@
+skill Structure_Enum
+exo [jth] struct - définition
+Indiquer si les définitions proposées sont correctes ou non.
+
+subexo [qwu] 
+~~~cpp
+struct Date {
+   int jour, mois, annee;
+}
+~~~
+sol false
+exp manque un `;` après `}`                                     
+
+subexo [zoy] 
+~~~cpp
+struct Date {
+   int jour;
+   int mois;
+   int annee;
+};
+~~~
+sol true
+exp chaque type est spécifié                                    
+
+subexo [pww] 
+~~~cpp
+struct Date {
+   int jour, mois, annee;
+};
+~~~
+sol true
+exp le type est commun à tous les membres                       
+
+subexo [fnu] 
+~~~cpp
+struct Date {
+   int jour; mois; annee;
+};
+~~~
+sol false
+exp les identifications sont séparés par des `;`                
+
+subexo [wqu] 
+~~~cpp
+struct {
+   int valeur;
+} date;
+~~~
+sol true
+exp type *anonyme* et une variable `date`est créée              
+
+subexo [rfq] 
+~~~cpp
+struct Vide {};
+~~~
+sol true
+exp un `struct` peut être vide                   
+
+subexo [bjq] 
+~~~cpp
+struct Struct {
+   int  valeur;
+   int* ptr = nullptr;
+};
+~~~
+sol true
+exp `ptr`est initialisé ce qui est une bonne chose              
+
+subexo [dpn] 
+~~~cpp
+struct Struct {
+   string text;
+};
+~~~
+sol true
+exp un `struc` peut contenir un `string`                        
+
+subexo [vlq] 
+~~~cpp
+struct Details {
+   int valeur;
+};
+
+struct Struct {
+   char    car;
+   Details details;
+};
+~~~
+sol true
+exp un `struc` peut contenir un autre `struct`                  
+
+subexo [pfq] 
+~~~cpp
+struct const Struct {
+   int  valeur;
+};
+~~~
+sol false
+exp un `struc` n'est pas constant globalement                   
+
+subexo [psz] 
+~~~cpp
+struct Struct {
+   const char car = 'A';
+};
+~~~
+sol true
+exp un membre d'un `struc` peut être constant                   
+
+
+subexo [bmw] 
+~~~cpp
+struct Struct {
+   const char c;
+};
+~~~
+sol true
+exp correcft mais une variable de ce type doit initialiser la constante c
