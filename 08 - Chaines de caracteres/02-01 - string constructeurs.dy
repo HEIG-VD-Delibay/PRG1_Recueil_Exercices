@@ -35,7 +35,6 @@ string s2(s1, 4, 1);
 cout << '|' << s2 << '|' << endl;
 ~~~
 sol EXEC
-// TODO: faut-il uniformiser ces erreurs particulières partout ?
 
 subexo [qlq]
 ~~~cpp
