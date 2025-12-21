@@ -58,8 +58,8 @@ int i = 0, j = 0;
 while (i <= 5) i += 2; j++;
 cout << i << ' ' << j;
 ~~~
+// TODO: make sure this code is not indented ?!! and other exos while like this in while(1)...
 sol 6 1
-TODO: make sure this code is not indented ?!! and other exos while like this in while(1)...
 
 exp
 Notons que proprement indenté, le code est:

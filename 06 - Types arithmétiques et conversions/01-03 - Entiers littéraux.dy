@@ -13,126 +13,99 @@ Pour chacune des lignes de code suivantes, indiquez
 On suppose que le compilateur utilise le modèle de donnée LLP64, i.e, avec `int` et `long` codés sur 32 bits et `long long` sur 64.
 **NB** 
 Pour simplifier les réponses, au lieu de: "long int v2 = 1;", veuillez écrire: "long int 1"
-En cas d'erreur de compilation, écrire: `nocompile`
+En cas d'erreur de compilation, écrire: `COMP`
 subexo [owv] 
 ~~~cpp
 auto v1 = 12u;        cout << v1 << endl;
 ~~~
 sol unsigned int 12
 
-subexo [ago] 
+subexo [ago]
 ~~~
-  auto v2 = 1L;         cout << v2 << endl;
+auto v2 = 1L;         cout << v2 << endl;
 ~~~
-sol 
-long int 1    
+sol long int 1
 
 subexo [kys] 
-~~~  
-  auto v3 = 100'000'000'000; cout << v3 << endl;
 ~~~
-sol 
-long long 100'000'000'000
-exp
-ou long en LP64, voir int dans un modèle de donnée plus
-exo [zos]tique. Dans tous les cas, le plus petit type entier capable 
-de stoquer la valeur 100000000000
+auto v3 = 100'000'000'000; cout << v3 << endl;
+~~~
+sol long long 100'000'000'000
+exp ou long en LP64, voir int dans un modèle de donnée plus exotique. Dans tous les cas, le plus petit type entier capable de stoquer la valeur 100000000000
 
 subexo [igc] 
 ~~~  
-  auto v4 = 0x33;      cout << v4 << endl;
+auto v4 = 0x33;      cout << v4 << endl;
 ~~~
-sol                           
-int 51
-exp
-33 en hexadécimal : 3 * 16 + 3 * 1
+sol int 51
+exp 33 en hexadécimal : 3 * 16 + 3 * 1
 
 subexo [xes] 
 ~~~  
-  auto v5 = 0xefg;     cout << v5 << endl;
+auto v5 = 0xefg;     cout << v5 << endl;
 ~~~
-sol 
-nocompile
-exp
-`g` n'est pas un chiffre hexadécimal
+sol COMP
+exp `g` n'est pas un chiffre hexadécimal
 
 subexo [ffg] 
-~~~  
-  auto v6 = 0xef;      cout << v6 << endl;
 ~~~
-sol 
-int 239
-exp
-ef en hexadécimal : 14 * 16 + 15
+auto v6 = 0xef;      cout << v6 << endl;
+~~~
+sol int 239
+exp ef en hexadécimal : 14 * 16 + 15
 
 subexo [zig] 
 ~~~  
-  auto v7 = 0xEF;      cout << v7 << endl;
+auto v7 = 0xEF;      cout << v7 << endl;
 ~~~
-sol 
-int 239
-exp
-EF en hexadécimal : 14 * 16 + 15
+sol int 239
+exp EF en hexadécimal : 14 * 16 + 15
 
 subexo [pqw] 
 ~~~  
-  auto v8 = 08;        cout << v8 << endl;
+auto v8 = 08;        cout << v8 << endl;
 ~~~
-sol 
-nocompile
-exp
-`8` n'est pas un chiffre octal
+sol COMCOMP
+exp `8` n'est pas un chiffre octal
 
 subexo [qjt] 
 ~~~  
-  auto v9 = 027;       cout << v9 << endl;
+auto v9 = 027;       cout << v9 << endl;
 ~~~
-sol 
-int 23
-exp
-027 en octal : 2*8+7 
+sol int 23
+exp 027 en octal : 2*8+7 
 
 subexo [tme] 
 ~~~  
-  auto v10 = 0xffull;       cout << v10 << endl;
+auto v10 = 0xffull;       cout << v10 << endl;
 ~~~
-sol 
-unsigned long long 255
-exp
-ff en hexadécimal : 15*16+15
+sol unsigned long long 255
+exp ff en hexadécimal : 15*16+15
 
 subexo [yfc] 
 ~~~  
-  auto v11 = 0xffffffff;       cout << v11 << endl;
+auto v11 = 0xffffffff;       cout << v11 << endl;
 ~~~
-sol 
-unsigned int 4294967295 
-exp
-2^32-1, valeur qui n'est pas représentable en signed int
+sol unsigned int 4294967295 
+exp 2^32-1, valeur qui n'est pas représentable en signed int
 
 subexo [vnl] 
 ~~~  
-  auto v12 = 0x7fffffff;       cout << v12 << endl;
+auto v12 = 0x7fffffff;       cout << v12 << endl;
 ~~~
-sol 
-int 2147483647
-exp
-2^31-1, le plus grand int représentable
+sol int 2147483647
+exp 2^31-1, le plus grand int représentable
 
 subexo [nmf] 
 ~~~
-   auto v13 = 0b010101; cout << v13;
+auto v13 = 0b010101; cout << v13;
 ~~~
-sol 
-int 21
-exp
-010101 en binaire : 0*32 + 1*16 + 0*8 + 1*4 + 0*2 + 1*1
+sol int 21
+exp 010101 en binaire : 0*32 + 1*16 + 0*8 + 1*4 + 0*2 + 1*1
 
 subexo [rnb] 
 ~~~
-   auto v14 = 0b101ul; cout << v14;
+auto v14 = 0b101ul; cout << v14;
 ~~~
-sol 
-unsigned long 5
-exp
-101 en binaire : 1*4 + 0*2 + 1*1
+sol unsigned long 5
+exp 101 en binaire : 1*4 + 0*2 + 1*1

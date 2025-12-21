@@ -26,8 +26,7 @@ subexo [dco]
 ~~~cpp
 auto r1 = n + c + p;
 ~~~
-sol 
-2 long 82
+sol 2 long 82
 exp
 r1 = n + c + p
  
@@ -40,8 +39,7 @@ subexo [iol]
 ~~~cpp
 auto r2 = 2 * x + c;
 ~~~
-sol 
-3 float 67.5
+sol 3 float 67.5
 exp
 r2 = 2*x + c
  
@@ -57,8 +55,7 @@ subexo [ruv]
 ~~~cpp
 auto r3 = (char) n + c;
 ~~~
-sol 
-2 int 72
+sol 2 int 72
 exp
 r3 = (char)n + c
  
@@ -70,10 +67,8 @@ subexo [qpb]
 ~~~cpp
 auto r4 = (float) z + n / 2;
 ~~~
-sol 
-1 float 8.5
-exp
-r4 = (float) z + n / 2
+sol 1 float 8.5
+exp r4 = (float) z + n / 2
  
 1 conversion implicite : z est tout d'abord converti en float
 (cast), ce qui donne 5.5. La division entière n / 2 est ensuite 
@@ -84,8 +79,7 @@ subexo [mla]
 ~~~cpp
 auto r5 a + b;
 ~~~
-sol 
-1 unsigned 4'294'967'295
+sol 1 unsigned 4'294'967'295
 exp
 r5 = a + b;
 

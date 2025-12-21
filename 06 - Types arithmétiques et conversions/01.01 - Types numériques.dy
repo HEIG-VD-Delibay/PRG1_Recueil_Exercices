@@ -48,11 +48,9 @@ subexo [pxe]
 
 3. Le type int est-il signé ou non signé par défaut ?
 opt
-- signé
+- [ok] signé
 - non signé
 - cela dépend du compilateur
-
-sol signé
 
 subexo [abj] 
 
@@ -60,15 +58,11 @@ subexo [abj]
 opt
 - signé
 - non signé
-- cela dépend du compilateur
-
-sol cela dépend du compilateur
+- [ok] cela dépend du compilateur
 
 subexo [zyu] 
 
 5. Le domaine de définition des entiers est-il fixé par la norme ou dépend-il de l'environnement utilisé ?
 opt
 - Par la norme
-- Dépend de l'environnement utilisé
-
-sol Dépend de l'environnement utilisé
+- [ok] Dépend de l'environnement utilisé

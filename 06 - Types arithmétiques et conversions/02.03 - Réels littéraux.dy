@@ -10,85 +10,72 @@ Pour chacune des lignes de code suivante, indiquez
 
 **NB** 
 Pour simplifier les réponses, au lieu de: "long int v2 = 1;", veuillez écrire: "long int 1"
-En cas d'erreur de compilation, écrire: `nocompile`
+En cas d'erreur de compilation, écrire: `COMP`
 
 subexo [lgr] 
 ~~~cpp
 auto v1 = 1.5;        cout << v1 << endl;
 ~~~
-sol 
-double 1.5
+sol double 1.5
 
 subexo [evk] 
 ~~~cpp
 auto v2 = 1E3;        cout << v2 << endl;
 ~~~
-sol 
-double 1E3
+sol double 1E3
 
 subexo [vva] 
 ~~~cpp
 auto v4 = 12.0u;      cout << v4 << endl;
 ~~~
-sol 
-nocompile       
-exp
-un réel ne peut être non signé
+sol COMP
+exp un réel ne peut être non signé
 
 subexo [bhz]
 ~~~cpp
 auto v6 = 1.0L;       cout << v6 << endl;
 ~~~
-sol
-long double 1.0L
+sol long double 1.0L
 
 subexo [wxn]
 ~~~cpp
 auto v7 = .5;         cout << v7 << endl;
 ~~~
-sol
-double .5
+sol double .5
 
 subexo [mah]
 ~~~cpp
 auto v8 = 5.;         cout << v8 << endl;
 ~~~
-sol
-double 5.
+sol double 5.
 
 subexo [yak]
 ~~~cpp
 auto v14 = 0x0.2;     cout << v14 << endl;
 ~~~
-sol
-nocompile
-exp
-pas le bon format hexfloat
+sol COMP
+exp pas le bon format hexfloat
 
 subexo [hem]
 ~~~cpp
 auto v17 = 0x1.p0;    cout << v17 << endl;
 ~~~
-sol
-double 0x1.p0
+sol double 0x1.p0
 
 subexo [rgi]
 ~~~cpp
 auto v18 = 0x1.8p+0f; cout << v18 << endl;
 ~~~
-sol 
-float 0x1.8p+0f
+sol float 0x1.8p+0f
 
 subexo [llp]
 ~~~cpp
 auto v19 = 0x1.p-2L;  cout << v19 << endl;
 ~~~
-sol
-long double 0x1.p-2L
+sol long double 0x1.p-2L
 
 subexo [mib]
 ~~~cpp
 auto v20 = 0x1.1p+2;  cout << v20 << endl; 
 ~~~
-sol
-double 0x1.1p+2
+sol double 0x1.1p+2
