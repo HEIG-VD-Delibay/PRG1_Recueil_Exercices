@@ -1,0 +1,212 @@
+skill Surcharge et Genericite
+exo [vls] Fonctions surchargées (1 paramètre)
+
+Que produisent les appels aux fonctions ci-dessous ?  
+
+Choisissez toutes les fonctions qui pourraient être appelées (si le type de machine varie). Si ambigu choisir "Ambigu" + toutes les fonctions candidates.
+
+TODO: check si c'est okay comme approche...
+
+~~~cpp
+double      f(signed char) { cout << "Fonction no 1"; return 0.; }
+signed char f(int&)        { cout << "Fonction no 2"; return 0 ; }
+int         f(const int&)  { cout << "Fonction no 3"; return 0 ; }
+float       f(unsigned)    { cout << "Fonction no 4"; return 0 ; }
+unsigned    f(double)      { cout << "Fonction no 5"; return 0 ; }
+float       f(float&)      { cout << "Fonction no 6"; return 0.; }
+~~~
+
+subexo [qxc]
+~~~cpp
+// no 1
+f('a');
+~~~
+
+opt [multiple]
+- [ok] Fonction 1
+- Fonction 2
+- [ok] Fonction 3
+- Fonction 4
+- Fonction 5
+- Fonction 6
+- Ambigu
+
+exp
+- `Fonction no 1` sur une machine avec `signed char`    (type exact)
+- `Fonction no 3` sur une machine avec `unsigned char` (ajustement de type)
+
+NB : la no 2 n'est pas possible (`int&` sur une constante `'a'`)
+
+subexo [nzs]
+~~~cpp
+// no 2
+f(42);
+~~~
+
+
+opt [multiple]
+- Fonction 1
+- Fonction 2
+- [ok] Fonction 3
+- Fonction 4
+- Fonction 5
+- Fonction 6
+- Ambigu
+
+exp
+- `Fonction no 3` (type exact)
+
+subexo [dqc]
+~~~cpp
+// no 3
+int i = 42;
+f(++i);	
+~~~
+
+opt [multiple]
+- Fonction 1
+- [ok] Fonction 2
+- Fonction 3
+- Fonction 4
+- Fonction 5
+- Fonction 6
+- Ambigu
+
+exp
+Les opérateurs suffixés, typiquement `++i` et `--i` retournent une référence sur la variable [cppreference](https://en.cppreference.com/w/cpp/language/operators)
+
+- `Fonction no 2`
+
+subexo [iug]
+~~~cpp
+// no 4
+int j = 42;
+f(j--);	
+~~~
+
+opt [multiple]
+- Fonction 1
+- Fonction 2
+- [ok] Fonction 3
+- Fonction 4
+- Fonction 5
+- Fonction 6
+- Ambigu
+
+exp
+Les opérateurs postfixés, typiquement `i++` et `i--` retournent une copie de la variable [cppreference](https://en.cppreference.com/w/cpp/language/operators)
+
+- `Fonction no 3`
+
+subexo [lgf]
+~~~cpp
+// no 5
+f(2ull);
+~~~
+
+opt [multiple]
+- [ok] Fonction 1
+- Fonction 2
+- [ok] Fonction 3
+- [ok] Fonction 4
+- [ok] Fonction 5
+- Fonction 6
+- [ok] Ambigu
+
+exp
+`2ull` est un `unsigned long long`
+
+4 fonctions sont candidates et il n'y a pas de priorité de choix => **ambiguité**
+
+- Fonction no 1 (conversion de `unsigned long long` en `signed char`)
+- Fonction no 3 (conversion de `unsigned long long` en `const int&`)
+- Fonction no 4 (conversion de `unsigned long long` en `unsigned`)
+- Fonction no 5 (conversion de `unsigned long long` en `double`)
+
+subexo [usw]
+~~~cpp
+// no 6
+long   a;
+double b;
+f(a < b);
+~~~
+
+opt [multiple]
+- Fonction 1
+- Fonction 2
+- [ok] Fonction 3
+- Fonction 4
+- Fonction 5
+- Fonction 6
+- Ambigu
+
+exp
+La comparaison d'un `long int` avec un `double` n'est pas directement possible.<br>Un ajustemnet de type est nécessaire `long` => `double`
+
+Ensuite la comparaison retoure un `bool`.<br>En l'absence de correspondance exacte, il y a promotion `bool` => `int`
+
+- `Fonction no 3`
+
+subexo [pcz]
+~~~cpp
+// no 7
+float r = 2.f;
+f(r *= 2.l);
+~~~
+
+opt [multiple]
+- Fonction 1
+- Fonction 2
+- Fonction 3
+- Fonction 4
+- Fonction 5
+- [ok] Fonction 6
+- Ambigu
+
+exp
+L'opérateur `*=` prend uniquement un float en paramètre. Le `long double` `2.l` est donc converti en `float`. L'opérateur `*=` retourne une référence à la variable `r`. La fonction 6 est appelée, `r` étant une `float&`. 
+
+- `Fonction no 6`
+
+subexo [mpu]
+~~~cpp
+// no 8
+f(f(2u));
+~~~
+opt [multiple]
+- Fonction 1
+- Fonction 2
+- Fonction 3
+- Fonction 4
+- [ok] Fonction 5
+- Fonction 6
+- Ambigu
+
+exp
+Dans une premier temps, `f(2u)` appelle la Fonction no 4 qui retourne un `float` mais sans référence.<br>
+L'appel de f(`double`) correspond à la Fonction no 5
+
+- `Fonction no 5`
+
+subexo [fda]
+~~~cpp
+// no 9
+f('2') ? f(2.0) : f(-2.0); 
+~~~
+
+TODO: pas tout à fait possible de représenter de multiple solutions sur des choix multiples dans Delibay désolé...Checker l'explication :)
+
+opt [multiple]
+- [ok] Fonction 1
+- Fonction 2
+- [ok] Fonction 3
+- Fonction 4
+- [ok] Fonction 5
+- Fonction 6
+- Ambigu
+
+exp
+Comme vu précédemment, `f('2')` appelle la fonction no 1 ou la fonction no 3 (sur une machine avec `unsigned char`).<br>
+Ces deux fonctions retournant `false`, `f(-2.0)` est appelé ce qui correspond à la Fonction no 5
+
+- `Fonction no 1` et `Fonction no 5` ou `Fonction no 3` et `Fonction no 5`

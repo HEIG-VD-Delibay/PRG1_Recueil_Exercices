@@ -1,0 +1,142 @@
+skill Surcharge et Genericite
+exo [wnh] Fonctions surchargées
+
+La fonction proposée peut-elle être surchargée et utilisée correctement ?
+
+subexo [cac]
+~~~cpp
+// no 1
+void f(int)      { /* no 1 */ }
+void f(int, int) { /* no 2 */ }
+~~~
+
+sol true
+exp le nombre de paramètres est différent<br>
+
+- `f(1);    // appel no 1`
+- `f(1, 2); // appel no 2`
+
+subexo [isd]
+~~~cpp
+// no 2
+void f(int)    { /* no 1 */ }
+void f(double) { /* no 2 */ }
+~~~
+
+sol true
+exp le type des paramètres est différent
+
+- `f(1);   // appel no 1`
+- `f(1.2); // appel no 2`
+
+subexo [zao]
+~~~cpp
+// no 3
+void f(int) { /* no 1 */ }
+int  f(int) { /* no 2 */ }
+~~~
+
+sol false
+exp le type de retour est différent mais peut être ignoré  
+exemple `sin(x);`  
+=> Les fonctions ne peuvent pas être surchargées.
+
+subexo [xhh]
+~~~cpp
+// no 4
+void f(int i=0) { /* no 1 */ }
+void f(int    ) { /* no 2 */ }
+~~~
+
+sol false
+exp ces fonctions **ne sont pas** disctinctes.  
+Si le paramètre effectif renseigne le paramètre formel avec valeur pas défaut, quelle fonction utiliser ?
+
+=> mais le compilateur ne permet pas cette surcharge
+
+subexo [vhf]
+~~~cpp
+// no 5
+void f(int&) { /* no 1 */ }
+void f(int ) { /* no 2 */ }
+~~~
+
+sol true
+exp ces fonctions sont disctinctes mais **peuvent poser des problèmes** selon les paramètres utilisés.  
+
+~~~cpp
+const int CSTE = 2;
+int i;
+
+f(CSTE); // appel de la no 2
+f(2);    // appel de la no 2
+f(i);    // ambiguité
+~~~
+
+subexo [bvx]
+~~~cpp
+// no 6
+void f(const int&) { /* no 1 */ }
+void f(int )       { /* no 2 */ }
+~~~
+
+sol true
+exp ces fonctions sont disctinctes mais **ne peuvent pas être utilisées**.<br>
+
+~~~cpp
+const int CSTE = 2;
+int i;
+const int& r = i;
+
+f(CSTE); // ambiguité
+f(2);    // ambiguité
+f(i);    // ambiguité
+f(r);    // ambiguité
+~~~
+
+subexo [kiu]
+~~~cpp
+// no 7
+void f(int ) { /* no 1 */ }
+void f(int*) { /* no 2 */ }
+~~~
+
+sol true
+exp ces fonctions sont disctinctes avec des types différents.<br>
+
+~~~cpp
+const int CSTE = 2;
+int i;
+int*       ptr1 = &i;
+const int* ptr2 = &i;
+
+f(CSTE); // appel de la no 1
+f(2);    // appel de la no 1
+f(i);    // appel de la no 1
+f(&i);   // appel de la no 2
+f(ptr1); // appel de la no 2
+f(ptr2); // aucune fonction compatible
+~~~
+
+subexo [nfd]
+~~~cpp
+// no 8
+void f(const int*) { /* no 1 */ }
+void f(      int*) { /* no 2 */ }
+~~~
+
+sol true
+exp ces fonctions sont disctinctes avec des types différents  
+... mais pas compatibles avec n'importe quel type.  
+
+~~~cpp
+const int CSTE = 2;
+int    i;
+double d;
+
+f(&CSTE); // appel de la no 1
+f(2);     // aucune fonction compatible
+f(i);     // aucune fonction compatible
+f(&i);    // appel de la no 2
+f(&d);    // aucune fonction compatible
+~~~

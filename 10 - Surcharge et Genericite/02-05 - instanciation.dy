@@ -1,0 +1,100 @@
+skill Surcharge et Genericite
+exo [fgk] Instanciation
+
+Soit la fonction générique `fct` suivante
+
+~~~cpp
+template <typename R, typename T, typename U>
+R fct(const T& t, const U& u) {
+   return R(t + u);
+}
+~~~
+
+et les déclarations de variables 
+
+~~~cpp
+double d;
+float  f;
+int    i;
+~~~
+
+Indiquer si les instanciations, implicites ou explicites, sont correctes.<br>
+Si correcte, préciser le type des arguments génériques R, T et U retenus.
+
+
+subexo [ymc]
+~~~cpp
+// no 1
+template
+int fct(const float& t, const double& u);
+~~~
+
+sol true
+exp
+Instanciation explicite de la fonction `fct`.
+
+- R : ne sera pas déductible, à passer lors de l'appel
+- T : `float` par déduction
+- U : `double` par déduction
+
+exemple d'appel : `fct<int>(f, d);`
+
+subexo [oxp]
+~~~cpp
+// no 2
+template
+int fct<>(const int& t, const double& u);
+~~~
+
+sol true
+exp
+Instanciation explicite de la fonction `fct`.
+
+- R : ne sera pas déductible, à passer lors de l'appel
+- T : `int` par déduction
+- U : `double` par déduction
+
+exemple d'appel : `fct<int>(i, d);`
+
+
+subexo [pej]
+~~~cpp
+// no 3
+fct(f, d);
+~~~
+
+sol false
+exp R n'est pas déductible. 
+
+subexo [vqu]
+~~~cpp
+// no 4
+fct<>(d, i);
+~~~
+
+sol false
+exp R n'est pas déductible. 
+
+subexo [ajf]
+~~~cpp
+// no 5
+fct<int>(i, d);
+~~~
+
+sol true
+exp
+- R : `int` explicitement choisi par `<int>`
+- T : `int` par déduction
+- U : `double` par déduction
+
+subexo [igk]
+~~~cpp
+// no 6
+fct<int, double>(i, d);
+~~~
+
+sol true
+exp
+- R : `int` explicitement choisi par `<int>`
+- T : `double` explicitement choisi par `<double>`
+- U : `double` par déduction
