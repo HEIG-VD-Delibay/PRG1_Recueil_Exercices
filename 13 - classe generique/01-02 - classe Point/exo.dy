@@ -1,0 +1,12 @@
+exo classe générique Point
+Avec le code fourni qui est la solution de l'exercice "01-01 - classe Coord" et **sans faire d'héritage**, écrire la classe générique `Point` pour faire passer les checks sur le nouveau `main()`.
+
+check Output correct
+see
+p1       : p1(0, 0)
+p2       : p2(1.2, 3.4)
+p3       : p3(1.2, 3.4)
+p3.1     : p3.1(1.2, 3.4)
+p1(-1, 1): p1(-1, 1)
+p1->     : p1(-2, 2)
+p1(x)    : p1 -2
