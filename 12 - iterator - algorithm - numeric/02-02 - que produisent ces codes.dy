@@ -8,7 +8,7 @@ template<typename Iterator>
 void display(Iterator first, Iterator last) {
    cout << "[";
    for (Iterator it = first; it != last; ++it) {
-      if (it != first) cout << ", ";
+      if (it != first) cout << ",";
       cout << *it;
    }
    cout << "]\n";
@@ -25,7 +25,7 @@ subexo [kac]
 // no 1
 display(v.begin(), v.end());
 ~~~
-sol [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sol [1,2,3,4,5,6,7,8,9,10]
 
 subexo [ahe]
 ~~~cpp
@@ -54,28 +54,28 @@ subexo [krg]
 display(v.begin() + 5, v.begin() + 4);
 ~~~
 sol INFI
-exp [6, 7, 8, 9, 10, ?, ?, ?, ..., ?] ⚠️ les itérateurs sont croisés => boucle infinie
+exp [6,7,8,9,10,?,?,?,...,?] ⚠️ les itérateurs sont croisés => boucle infinie
 
 subexo [kof]
 ~~~cpp
 // no 6
 display(tab, tab + 3);
 ~~~
-sol [1, 2, 3]
+sol [1,2,3]
 
 subexo [cgj]
 ~~~cpp
 // no 7
 display(tab, tab + 2);
 ~~~
-sol [1, 2]
+sol [1,2]
 
 subexo [ybq]
 ~~~cpp
 // no 8
 display(tab, tab + 10);
 ~~~
-sol [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sol [1,2,3,4,5,6,7,8,9,10]
 
 subexo [fuz]
 ~~~cpp
@@ -83,7 +83,7 @@ subexo [fuz]
 display(tab, tab + 12);
 ~~~
 sol 
-- [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ?, ?]
+- [1,2,3,4,5,6,7,8,9,10,?,?]
 - INDE
 exp ⚠️ en dehors du tableau => indéterminé
 
@@ -92,7 +92,7 @@ subexo [nvv]
 // no 10
 display(tab + 2, tab + 5);
 ~~~
-sol [3, 4, 5]
+sol [3,4,5]
 
 subexo [kbt]
 ~~~cpp
@@ -100,7 +100,7 @@ subexo [kbt]
 display(tab + 5, tab + 2);
 ~~~
 sol INFI
-exp [6, 7, 8, 9, 10, ?, ?, ?, ?, ..., ?]
+exp [6,7,8,9,10,?,?,?,?,...,?]
 
 ⚠️ les itérateurs sont croisés => boucle infinie
 
@@ -151,7 +151,7 @@ void f(const T tab[], size_t taille) {
 // tab supposé dans le scope de déclaration de l'appel
 f(tab, sizeof(tab));
 ~~~
-sol [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sol [1,2,3,4,5,6,7,8,9,10]
 
 exp 👍 cette fois pas d'utilisation de `tab.begin()` ou `tab.end()`<br>mais de `tab` et `tab + taille` pour le constructeur de `v`.
 
@@ -160,7 +160,7 @@ subexo [tmx]
 // no 15
 display(v.rbegin(), v.rend());
 ~~~
-sol [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+sol [10,9,8,7,6,5,4,3,2,1]
 
 subexo [vvh]
 ~~~cpp
@@ -188,4 +188,4 @@ subexo [ybd]
 // no 18
 display(v.rbegin() + 1, v.rend() - 3);
 ~~~
-sol [9, 8, 7, 6, 5, 4]
+sol [9,8,7,6,5,4]
