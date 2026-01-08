@@ -1,0 +1,90 @@
+skill iterator - algorithm - numeric
+exo [vew] Algorithm - sans modification
+
+Soit l'opérateur de flux et le vecteur déclarés.
+
+~~~cpp
+template <typename T>
+ostream& operator<< (ostream& os, span<T> s) {
+   os << "[";
+   for (size_t i=0; i<s.size(); ++i) {
+      if (i) os << ", ";
+      os << s[i];
+   }
+   return os << "]";
+}
+
+array  a {1, 2, 3};
+vector v {1, 2, 3, 4, 5, 1, 2, 3, 4};
+~~~
+
+Que produisent les codes ci-après
+
+subexo [sev]
+~~~cpp
+// no 1
+cout << count(v.begin(), v.end(), *v.begin());
+~~~
+sol 2
+
+subexo [kkb]
+~~~cpp
+// no 2
+cout << count(v.begin(), v.end(), 6);
+~~~
+sol 0
+exp rien n'a été trouvé
+
+subexo [jkx]
+~~~cpp
+// no 3
+search(v.begin(), a.begin(),
+       v.end(),   a.end());
+~~~
+
+sol COMP
+exp ⚠️ l'ordre des paramètres est faut, les itérateurs ne sont donc pas compatibles.<br>
+**ne compile pas**
+
+subexo [sdz]
+~~~cpp
+// no 4
+auto it = search(v.begin(),     v.end(),
+                 a.begin() + 1, a.end());
+
+cout << distance(v.begin(), it);
+~~~
+sol 1
+exp Recherche de [2, 3] dans le vecteur v
+
+subexo [lao]
+~~~cpp
+// no 5
+auto it = search(v.begin() + 1,     v.end(),
+                 a.begin(),         a.end());
+
+cout << distance(v.begin(), it);
+~~~
+sol 5
+exp Recherche de [1, 2, 3] dans le vecteur v depuis la position 1
+
+subexo [qgb]
+~~~cpp
+// no 6
+auto resultat = equal(v.begin(), v.begin() + 3,
+                      a.begin(), a.end());
+
+cout << resultat;
+~~~
+sol true
+
+subexo [dif]
+~~~cpp
+// no 7
+auto resultat = equal(v.begin(), v.end(),
+                      v.begin(), v.end());
+
+cout << resultat;
+~~~
+sol true
+exp 🤣 mais alors `v == v` aurait très bien fait l'affaire

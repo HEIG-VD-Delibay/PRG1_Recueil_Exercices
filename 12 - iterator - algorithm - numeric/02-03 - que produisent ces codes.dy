@@ -1,0 +1,60 @@
+skill iterator - algorithm - numeric
+exo [rzn] Que produisent ces codes
+
+Soit le vecteur déclaré.
+
+~~~cpp
+vector<int> v{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+~~~
+
+Que valent les vecteurs après chacun des instructions ci-après.  
+⚠️ les instructions sont dépendantes les unes des autres.
+
+subexo [fhu]
+~~~cpp
+// no 1
+vector v1(v.begin(), v.end());
+~~~
+sol [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+subexo [cnt]
+~~~cpp
+// no 2
+vector v2(v.begin() + 1, v.end() - 2);
+~~~
+sol [2, 3, 4, 5, 6, 7, 8]
+
+subexo [cus]
+~~~cpp
+// no 3
+vector v3(v.rbegin() + 1, v.rend() - 2);
+~~~
+sol [9, 8, 7, 6, 5, 4, 3]
+
+subexo [zwr]
+~~~cpp
+// no 4
+v3.assign(v2.begin() + 1, v2.end() - 4);
+~~~
+sol [3, 4]
+
+subexo [jxq]
+~~~cpp
+// no 5
+v3.erase(v3.begin());
+~~~
+sol [4]
+
+subexo [ecd]
+~~~cpp
+// no 6
+v3.insert(v3.begin(), v.begin(), v.begin() + 2);
+~~~
+sol [1, 2, 4]
+
+subexo [npl]
+~~~cpp
+// no 7
+v3.insert(v3.begin(), v.rbegin(), v.rbegin() + 2);
+~~~
+sol [10, 9, 1, 2, 4]
