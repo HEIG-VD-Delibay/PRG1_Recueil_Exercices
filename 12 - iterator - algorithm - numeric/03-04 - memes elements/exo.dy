@@ -1,0 +1,49 @@
+exo Mêmes éléments
+
+**Première partie**  
+Ecrire une fonction `meme_elements` qui reçoit deux tableaux en paramètre de type `<T>` et retourne `true` si les deux tableaux contiennent les même éléments et `false` dans le cas contraire.
+
+- l'ordre n'a pas d'importance
+- les valeurs à double sont possibles
+
+Les deux tableaux ci-dessous ont les même éléments
+
+~~~cpp
+array  a {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+vector v {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2};
+~~~
+
+//TODO: okay ce système de deux parties ? pas de sous exos supportés pour le moment...
+**Deuxième partie**  
+
+🤔... et si nous voulions écrire
+
+~~~cpp
+if (span<int>(a) == span<int>(v)) { ... }
+~~~
+
+<details>
+<summary>Solution de la deuxième partie</summary>
+
+~~~cpp
+template <typename T>
+bool operator== (span<T> tab1, span<T> tab2) {
+   for (const T& e : tab1)
+      if (not tab_contient_val<T>(e, tab2))
+         return false;
+
+   for (const T& e : tab2)
+      if (not tab_contient_val<T>(e, tab1))
+         return false;
+
+   return true;
+}
+~~~
+
+</details>
+
+check Output correct
+see
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2]
+1
