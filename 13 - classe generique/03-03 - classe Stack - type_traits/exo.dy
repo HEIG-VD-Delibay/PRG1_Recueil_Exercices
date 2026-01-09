@@ -1,0 +1,45 @@
+exo classe générique Stack -  type_traits
+
+Avec le code fourni qui est la solution de l'exercice "01-10 - classe Stack - specialisation", en utilisant le header [`<type_traits>`](https://cplusplus.com/reference/type_traits/) et un [`constexpr if`](https://en.cppreference.com/w/cpp/language/if#Constexpr_if), écrivez un opérateur `<<` qui fonctionne pour les types pointeurs et non pointeurs sans utiliser ni surcharge ni spécialisation.
+
+<details>
+<summary>Solution</summary>
+
+~~~cpp
+#include <type_traits>   // std::is_pointer
+
+template <typename T, size_t n>
+std::ostream& operator<< (std::ostream& os, const Stack<T, n>& s) {
+   for (size_t i = 0; i < s.index; ++i) {
+      if constexpr (std::is_pointer<T>::value)
+         os << "[" << i << "] " << *s.data[i] << '\n';
+      else
+         os << "[" << i << "] " << s.data[i] << '\n';
+   }
+   return os;
+}
+~~~
+
+Notons qu'il est indispensable ici d'utiliser `if constexpr`. 
+
+Si on oublie le `constexpr`, le code  ne compile pas pour les types T qui ne disposent pas de l'opérateur `*` unaire, i.e. pour les  types qui en sont pas des pointeurs ou des itérateurs. 
+
+Avec `constexpr`, la branche qui n'est pas exécutée n'est pas non plus compilée.
+
+</details>
+
+check Output correct
+see 
+[0] 0
+[1] 1
+[2] 2
+[3] 3
+[4] 4
+[5] 5
+
+[0] 0
+[1] 1
+[2] 2
+[3] 3
+[4] 4
+[5] 5

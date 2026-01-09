@@ -1,0 +1,20 @@
+exo classe générique Stack
+Avec le code fourni qui est la solution de l'exercice "09 - Tableaux/01-07 - stack", l'écrire cette fois de manière générique.
+
+A la compilation, l'utilisateur doit pouvoir choisir le type de données à manipuler `<T>` et la capacité `n` de la pile.<br>
+Cette valeur est fixée par défaut à 100.
+
+
+check Output correct
+see
+size : 0
+data : []
+
+top  : 1024
+size : 10
+
+size : 10
+data : [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+
+size : 0
+data : []

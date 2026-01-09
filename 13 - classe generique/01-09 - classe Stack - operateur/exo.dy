@@ -1,0 +1,22 @@
+exo classe générique Stack -  opérateurs
+Avec le code fourni qui est la solution de l'exercice "01-07 - classe générique Stack - compilation séparée", l'adapter pour le nouveau `main()`.
+
+// TODO: le nom de l'exo a un titre différent du nom du dossier...
+
+check Output correct
+see
+[0] 0
+[1] 1
+[2] 2
+[3] 3
+[4] 4
+[5] 5
+
+[0] 0
+[1] 1
+[2] 2
+[3] 3
+[4] 4
+[5] 5
+
+true

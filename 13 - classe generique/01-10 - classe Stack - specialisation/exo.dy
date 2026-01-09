@@ -1,0 +1,72 @@
+exo classe générique Stack -  spécialisation
+Avec le code fourni qui est la solution de l'exercice "01-09 - classe Stack - operateur", nous souhaitons cette fois manipuler des `int` et des `const int*` dans le même code.
+
+Que faut-il changer / ajouter ?
+
+<details>
+<summary>Solution par spécialisation</summary>
+
+⚠️ la spécialisation partielle d'une méthode d'une classe générique n'est pas possible en C++
+
+Seul changement, **ajouter une spécialisation** de l'`operator <<` dans l'implémentation.
+Cette solution n'est pas satisfaisante dans la mesure où ce sera toujours pour `10` x `const int*`.
+
+~~~cpp
+template <>
+std::ostream& operator<< (std::ostream& os, const Stack<const int*, 10>& s) {
+   for (size_t i = 0; i < s.index; ++i) {
+      os << "[" << i << "] "<< *s.data[i] << '\n';
+   }
+   return os;
+}
+~~~
+
+</details>
+
+<details>
+<summary>Solution par surcharge</summary>
+
+Une meilleure solution consiste à ne faire différer le code que pour l'affichage d'un élément. 
+Plutôt que d'utiliser l'opérateur `<<` pour les afficher, on crée une fonction `__display_stack_element`
+que l'on surcharge pour les types pointeurs. 
+
+~~~cpp 
+template <typename T>
+std::ostream& __display_stack_element(std::ostream& os, T t) {
+   return os << t;
+}
+
+template <typename T>
+std::ostream& __display_stack_element(std::ostream& os, T* t) {
+   return os << *t;
+};
+
+template <typename T, size_t n>
+std::ostream& operator<< (std::ostream& os, const Stack<T, n>& s) {
+   for (size_t i = 0; i < s.index; ++i) {
+      os << "[" << i << "] ";
+      __display_stack_element(os, s.data[i]);
+      os << '\n';
+   }
+   return os;
+}
+~~~
+</details>
+
+💡Une meilleure solution sera vue à l'exercice "13-03-03 - classe Stack - type_traits".
+
+check Output correct
+see
+[0] 0
+[1] 1
+[2] 2
+[3] 3
+[4] 4
+[5] 5
+
+[0] 0
+[1] 1
+[2] 2
+[3] 3
+[4] 4
+[5] 5
