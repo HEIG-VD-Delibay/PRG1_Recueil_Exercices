@@ -38,15 +38,21 @@ header
 row
 - entier           
 - [text] 17
+row
 - adr entier       
 - [text] 0x16eea3698
+row
 - param            
 - [text] 0x16eea3698
+row
 - adr param        
 - [text] 0x16eea3648
+row
 - valeur pointee   
 - [text] 18
+row
 - entier           
 - [text] 18
+row
 - adr entier       
 - [text] 0x16eea3698
