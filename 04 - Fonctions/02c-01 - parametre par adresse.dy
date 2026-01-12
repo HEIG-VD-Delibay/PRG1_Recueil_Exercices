@@ -37,17 +37,16 @@ header
 - Affichage
 row
 - entier           
-- adr entier       
-- param            
-- adr param        
-- valeur pointee   
-- entier           
-- adr entier       
-row
 - [text] 17
+- adr entier       
 - [text] 0x16eea3698
+- param            
 - [text] 0x16eea3698
+- adr param        
 - [text] 0x16eea3648
+- valeur pointee   
 - [text] 18
+- entier           
 - [text] 18
+- adr entier       
 - [text] 0x16eea3698
