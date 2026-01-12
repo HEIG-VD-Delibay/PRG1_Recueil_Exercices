@@ -57,11 +57,11 @@ int main() {
 table
 header
 - # 
-- [text] a 
-- [text] b 
-- [text] c 
-- [text] min 
-- [text] d 
+- a 
+- b 
+- c 
+- min 
+- d 
 row
 - 1)
 - [text] 12
