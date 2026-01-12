@@ -1,0 +1,8 @@
+exo Permutation circulaire droite de 3 réels
+Avec le code fourni qui est la solution de l'exercice "02b-02 - permutation", refactoriser pour ne plus utiliser de référence `double& ref`.
+
+check Output correct
+see 
+x = 3, y = 1, z = 2
+x = 2, y = 3, z = 1
+x = 1, y = 2, z = 3

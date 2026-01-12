@@ -1,0 +1,8 @@
+exo Permutation circulaire droite de 3 réels
+Ecrire un programme C++ qui met à disposition une fonction sans valeur de retour et prenant 3 paramètres de type double permettant d'effectuer une permutation circulaire droite de ces 3 valeurs.
+
+check Output correct
+see 
+x = 3, y = 1, z = 2
+x = 2, y = 3, z = 1
+x = 1, y = 2, z = 3
